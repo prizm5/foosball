@@ -23,8 +23,7 @@ def reset():
     global p2
     p2=0
 
-# now we'll define two threaded callback functions
-# these will run in another thread when our events are deåtected
+
 def my_callback(channel):
     play()
     print('Player 1 score {}'.format(p))
@@ -53,7 +52,7 @@ def start():
 
     GPIO.add_event_detect(18, GPIO.FALLING, callback=my_callback, bouncetime=500)
     GPIO.add_event_detect(4, GPIO.FALLING, callback=my_callback2, bouncetime=500)
-    GPIO.add_event_detect(24, GPIO.FALLING, callback=my_callback3, bouncetime=500)
+    GPIO.add_event_detect(24, GPIO.FALLING, callback=my_callback3, bouncetime=10)
 
     try:
         global p
