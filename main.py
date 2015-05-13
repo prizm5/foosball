@@ -51,6 +51,6 @@ while True:
                 time.sleep(1)
                 if i == 5:
                         led.Clear()
-                        j = 1/0  # cause an exception to be thrown and the program to exit
+                        break
         except KeyboardInterrupt:
                 break

@@ -5,6 +5,7 @@ from neopixel import *
 class LedController(object):
     def __init__(self):
         self.LEDS = {0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}
+        self.LEDS2 = {0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}
         #LED strip configuration:
         self.LED_COUNT      = 10      # Number of LED pixels.
         self.LED_PIN        = 18      # GPIO pin connected to the pixels (must support PWM!).
@@ -20,21 +21,25 @@ class LedController(object):
     def SetPlayerScore(self,player,score):
         print "player: " + str(player) + " score: " + str(score)
         if player%2==0:
-            start = 5
+            for i in (0,score-1):
+                self.LEDS2[i] = 1
         else:
-            start = 0
-
-        for i in (start,start+score):
-            self.LEDS[i] = 1
+            for i in (0,score-1):
+                self.LEDS[i] = 1
 
             self._updateLeds()
 
     def _updateLeds(self):
-        for i in range(0,self.LED_COUNT):
+        for i in range(0,9):
             if self.LEDS[i]==1:
                 self.strip.setPixelColor(i, Color(0, 0, 255))
             else:
                 self.strip.setPixelColor(i, Color(0, 0, 0))
+
+            if self.LEDS2[i]==1:
+                self.strip.setPixelColor(i+10, Color(0, 0, 255))
+            else:
+                self.strip.setPixelColor(i+10, Color(0, 0, 0))
 
         self.strip.show()
 
