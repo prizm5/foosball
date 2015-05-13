@@ -27,7 +27,7 @@ def setScore(player,score):
 
     for i in range(0,score):
         strip.setPixelColor(start+i, Color(0, 0, 255))
-	strip.show()
+        strip.show()
 
 p2=0
 
@@ -61,24 +61,22 @@ def my_callback(channel):
 def my_callback2(channel):
     play2()
     print('Player 2 score {}'.format(p2))
- 
+
 
 def my_callback3(channel):
     reset()
     print('Resetting scores')
- 
+
 
 def start():
-    
-    strip.setPixelColor(0, Color(0, 0, 255))
     GPIO.setmode(GPIO.BCM)
-    
+
     # GPIO 23 & 17 set up as inputs, pulled up to avoid false detection.
     # Both ports are wired to connect to GND on button press.
     # So we'll be setting up falling edge detection for both
     GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_UP)
     #GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-    
+
     # GPIO 24 set up as an input, pulled down, connected to 3V3 on button press
     #GPIO.setup(24, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
