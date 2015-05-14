@@ -49,6 +49,8 @@ while True:
 
                 led.SetPlayerScore(1,i)
                 time.sleep(1)
+                led.SetPlayerScore(2,i)
+                time.sleep(1)
                 if i == 5:
                         led.Clear()
                         break
