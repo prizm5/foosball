@@ -31,7 +31,7 @@ class LedController(object):
         self._updateLeds()
 
     def _updateLeds(self):
-        for i in range(0,9):
+        for i in range(0,self.LED_COUNT):
             if self.LEDS[i]==1:
                 self.strip.setPixelColor(i, Color(0, 0, 255))
             else:
@@ -41,6 +41,6 @@ class LedController(object):
         self.strip.show()
 
     def Clear(self):
-        for i in range(0,self.LED_COUNT-1):
+        for i in range(0,self.LED_COUNT):
             self.strip.setPixelColor(i, Color(0, 0, 0))
         self.strip.show()

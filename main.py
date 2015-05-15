@@ -51,7 +51,7 @@ while True:
                 time.sleep(1)
                 led.SetPlayerScore(2,i)
                 time.sleep(1)
-                if i == 5:
+                if i == 7:
                         led.Clear()
                         break
         except KeyboardInterrupt:
