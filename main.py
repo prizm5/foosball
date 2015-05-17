@@ -3,56 +3,53 @@
 import logging
 import logging.handlers
 import argparse
-import sys
-import time  # this is only being used as part of the example
-from logger import *
 import time
+from logger import *
 
-from ledcontroller import *
+def setupLogging(logToFile,logfile="service.log"):
+    # Deafults
 
-# Deafults
-LOG_FILENAME = "myservice.log"
-LOG_LEVEL = logging.INFO  # Could be e.g. "DEBUG" or "WARNING"
+    LOG_FILENAME = logfile
+    LOG_LEVEL = logging.INFO  # Could be e.g. "DEBUG" or "WARNING"
 
-# Define and parse command line arguments
-parser = argparse.ArgumentParser(description="My simple Python service")
-parser.add_argument("-l", "--log", help="file to write log to (default '" + LOG_FILENAME + "')")
+    logger = logging.getLogger(__name__)
+    logger.setLevel(LOG_LEVEL)
+    handler = logging.handlers.TimedRotatingFileHandler(LOG_FILENAME, when="midnight", backupCount=3)
+    formatter = logging.Formatter('%(asctime)s %(levelname)-8s %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
 
-# If the log file is specified on the command line then override the default
-args = parser.parse_args()
-if args.log:
+    if logToFile:
+        # Replace stdout with logging to file at INFO level
+        sys.stdout = MyLogger(logger, logging.INFO)
+        # Replace stderr with logging to file at ERROR level
+        sys.stderr = MyLogger(logger, logging.ERROR)
+    return logger
+
+def main():
+
+    # Define and parse command line arguments
+    parser = argparse.ArgumentParser(description="My simple Python service")
+    parser.add_argument("-l", "--log", help="file to write log to (default service.log)")
+
+    # If the log file is specified on the command line then override the default
+    args = parser.parse_args()
+
+    LOG_FILENAME = 'service.log'
+    if args.log:
         LOG_FILENAME = args.log
 
-logger = logging.getLogger(__name__)
-logger.setLevel(LOG_LEVEL)
-handler = logging.handlers.TimedRotatingFileHandler(LOG_FILENAME, when="midnight", backupCount=3)
-formatter = logging.Formatter('%(asctime)s %(levelname)-8s %(message)s')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-
-# Replace stdout with logging to file at INFO level
-#sys.stdout = MyLogger(logger, logging.INFO)
-# Replace stderr with logging to file at ERROR level
-#sys.stderr = MyLogger(logger, logging.ERROR)
-
-led = LedController()
+    logger = setupLogging(False, LOG_FILENAME)
 
 
-i = 0
-
-# Loop forever, doing something useful hopefully:
-while True:
+    # Loop forever, doing something useful hopefully:
+    while True:
         try:
-                logger.info("The counter is now " + str(i))
-                print "This is a print"
-                i += 1
-
-                led.SetPlayerScore(1,i)
-                time.sleep(1)
-                led.SetPlayerScore(2,i)
-                time.sleep(1)
-                if i == 7:
-                        led.Clear()
-                        break
+            a=1
+            time.sleep(1)
         except KeyboardInterrupt:
-                break
+            break
+
+
+if __name__ == "__main__":
+    main()

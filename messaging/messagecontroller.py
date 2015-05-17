@@ -1,92 +1,57 @@
 import jsonpickle
-import ConfigParser
-import os.path
-import messages
 import pusher
-import time
-
+from configurable import *
 import pusherclient
-
-
-import sys
-# Add a logging handler so we can see the raw communication data
-import logging
-root = logging.getLogger()
-root.setLevel(logging.ERROR)
-ch = logging.StreamHandler(sys.stdout)
-root.addHandler(ch)
-
-
-
 
 from messages import *
 
-class Configurable(object):
-    def __init__(self):
-        fname = 'pusher.ini'
-        if os.path.isfile(fname):
-            self.Config = ConfigParser.ConfigParser()
-            self.Config.read(fname)
-        else:
-            raise ('config not found')
-
-    def ConfigSectionMap(self, section):
-        dict1 = {}
-        options = self.Config.options(section)
-        for option in options:
-            try:
-                dict1[option] = self.Config.get(section, option)
-                if dict1[option] == -1:
-                    DebugPrint("skip: %s" % option)
-            except:
-                print("exception on %s!" % option)
-                dict1[option] = None
-        return dict1
-
 
 class MessageController(Configurable):
-    def __init__(self):
-        Configurable.__init__(self)
-        appid = self.ConfigSectionMap('pusher')['appid']
-        key = self.ConfigSectionMap('pusher')['key']
-        secret = self.ConfigSectionMap('pusher')['secret']
-        self.pusher = pusher.Pusher(app_id=appid, key=key, secret=secret)
+    def __init__(self, logger, start_game_handler):
+        Configurable.__init__(self, 'pusher.ini')
+        config = self.ConfigSectionMap('pusher')
+        app_id = config['appid']
+        key = config['key']
+        secret = config['secret']
+        self.logger = logger
+        self.game_handler = start_game_handler
+        self.pusher = pusher.Pusher(app_id=app_id, key=key, secret=secret)
         self.channel = u'private-foosball_channel'
         self.client = pusherclient.Pusher(key, secret=secret) 
         self.client.connection.bind(u'pusher:connection_established', self.connect_handler)
         self.client.connect()
 
-    def SendMessage(self, event, message):
-        oneway = jsonpickle.encode(message, unpicklable=False)
-        self.pusher.trigger(self.channel,event, oneway)
+    def send_message(self, event, message):
+        msg = jsonpickle.encode(message, unpicklable=False)
+        self.pusher.trigger(self.channel, event, msg)
 
-    def SendGameQueued(self,id):
+    def send_game_queued(self,id):
         m = GameQueued(id)
-        self.SendMessage(u'game:queued',m)
+        self.send_message(u'game:queued', m)
 
-    def SendGoalScored(self,id,player):
+    def send_goal_scored(self,id,player):
         m = GoalScored(id,player)
-        self.SendMessage(u'game:goalscored',m)
+        self.send_message(u'game:goalscored', m)
+        self.logger.info("%s scored a goal", player)
 
+    def send_end_game(self, game):
+        self.send_message(u'game:ended', game)
 
-    def SendEndGame(self, game):
-        self.SendMessage(u'game:ended',game)
-
-
-    def handleGameStart(self, data):
+    def handle_game_start(self, data):
         msg = jsonpickle.decode(data)
-        game = Game(msg['id'],msg['player1'],msg['player2'],msg['player1Score'],msg['player2Score'])
-        print("Game Started between " + game.player1 + " and " + game.player2)
+        game = Game(msg['id'], msg['player1'], msg['player2'], msg['player1Score'], msg['player2Score'])
+        self.logger.info("Game Started between " + game.player1 + " and " + game.player2)
+        self.game_handler(game)
 
     def connect_handler(self, data):
         c = self.client.subscribe(self.channel)
-        c.bind(u'client-game:started',self.handleGameStart)
+        c.bind(u'client-game:started', self.handle_game_start)
 
 
-mc = MessageController()
+def hex_to_rgb( value):
+        value = value.lstrip('#')
+        lv = len(value)
+        return tuple(int(value[i:i+lv/3], 16) for i in range(0, lv, lv/3))
 
-while True:
-    #game = Game(1,6,10)
-    #mc.SendGoalScored(game.id, game.player1)
-    time.sleep(1)
-
+c = hex_to_rgb('ffffff')
+print(c)
