@@ -14,6 +14,7 @@ class LedController(object):
         self.LED_BRIGHTNESS = 255     # Set to 0 for darkest and 255 for brightest
         self.LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
         self.LEDS = self.make_led_values()
+
         self.player1color = Color(0, 0, 255)
         self.player2color = Color(0, 255, 0)
         self.logger = logger
@@ -23,11 +24,11 @@ class LedController(object):
                                        self.LED_BRIGHTNESS)
         # Initialize the library (must be called once before other functions).
         self.strip.begin()
-        logger.info("%s Initialzed", __name__)
+        logger.info("%s Initialized", __name__)
 
     def make_led_values(self):
         l={}
-        for i in range(0, 10):
+        for i in range(0, self.LED_COUNT):
             l[i] = 0
         return
 
@@ -44,7 +45,7 @@ class LedController(object):
         self.player1color = Color(c2)
 
     def set_player_score(self, player, score):
-        if player %2 == 0:
+        if player % 2 == 0:
             self.logger.info("player: " + str(player) + " score: " + str(score))
             for i in (0, score-1):
                 self.LEDS[self.LED_OFFSET + i] = 1
@@ -56,12 +57,14 @@ class LedController(object):
         self._update_leds()
 
     def _update_leds(self):
-        for i in range(0,self.LED_COUNT):
+        for i in range(0, self.LED_COUNT-1):
+            color = Color(0, 0, 0)
             if self.LEDS[i] == 1:
-                self.strip.setPixelColor(i, self.player2color)
-            else:
-                self.strip.setPixelColor(i, self.player1color)
-
+                if i <= self.LED_OFFSET:
+                    color = self.player1color
+                else:
+                    color = self.player2color
+            self.strip.setPixelColor(i, color)
         self.strip.show()
 
     def clear(self):

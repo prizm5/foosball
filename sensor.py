@@ -7,7 +7,7 @@ class SensorController(object):
         self.sensor2 = 22
         GPIO.setmode(GPIO.BCM)
         self.logger = logger
-        logger.info("%s Initialzed", __name__)
+        logger.info("%s Initialized", __name__)
 
     def AddSensor(self, port, callback, bounce):
         p = int(port)
