@@ -3,10 +3,12 @@
 import logging
 import logging.handlers
 import argparse
-import time
+import sys
+from GameController import *
 from logger import *
 
-def setupLogging(logToFile,logfile="service.log"):
+
+def setupLogging(logfile="service.log"):
     # Deafults
 
     LOG_FILENAME = logfile
@@ -19,11 +21,16 @@ def setupLogging(logToFile,logfile="service.log"):
     handler.setFormatter(formatter)
     logger.addHandler(handler)
 
-    if logToFile:
-        # Replace stdout with logging to file at INFO level
-        sys.stdout = MyLogger(logger, logging.INFO)
-        # Replace stderr with logging to file at ERROR level
-        sys.stderr = MyLogger(logger, logging.ERROR)
+    stderr_log_handler = logging.StreamHandler()
+    logger.addHandler(stderr_log_handler)
+    stderr_log_handler.setFormatter(formatter)
+
+    logger.info("Logger Created")
+    # Replace stdout with logging to file at INFO level
+    sys.stdout = MyLogger(logger, logging.INFO)
+    # Replace stderr with logging to file at ERROR level
+    sys.stderr = MyLogger(logger, logging.ERROR)
+
     return logger
 
 def main():
@@ -39,7 +46,9 @@ def main():
     if args.log:
         LOG_FILENAME = args.log
 
-    logger = setupLogging(False, LOG_FILENAME)
+    logger = setupLogging(LOG_FILENAME)
+
+    game = GameController(logger)
 
 
     # Loop forever, doing something useful hopefully:

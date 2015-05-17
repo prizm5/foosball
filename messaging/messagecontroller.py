@@ -39,8 +39,10 @@ class MessageController(Configurable):
 
     def handle_game_start(self, data):
         msg = jsonpickle.decode(data)
-        game = Game(msg['id'], msg['player1'], msg['player2'], msg['player1Score'], msg['player2Score'])
-        self.logger.info("Game Started between " + game.player1 + " and " + game.player2)
+        self.logger.info("client-game:started message received")
+        self.logger.debug(msg)
+        game = Game(msg['_id'], msg['player1'], msg['player2'], msg['player1Score'], msg['player2Score'])
+        self.logger.info("client-game:started message received")
         self.game_handler(game)
 
     def connect_handler(self, data):
@@ -48,10 +50,4 @@ class MessageController(Configurable):
         c.bind(u'client-game:started', self.handle_game_start)
 
 
-def hex_to_rgb( value):
-        value = value.lstrip('#')
-        lv = len(value)
-        return tuple(int(value[i:i+lv/3], 16) for i in range(0, lv, lv/3))
 
-c = hex_to_rgb('ffffff')
-print(c)

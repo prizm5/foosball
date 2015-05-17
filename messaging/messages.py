@@ -1,8 +1,8 @@
 
 
 class Game(object):
-    def __init__(self, id, player1, player2, player1score, player2score):
-        self.id = id
+    def __init__(self, id='0', player1='player1', player2='player2', player1score=0, player2score=0):
+        self.Id = id
         self.player1 = 'player1'
         self.player1Score = player1score
         self.player1Color = '5DFC0A'
@@ -19,4 +19,4 @@ class GoalScored(object):
 
 class GameQueued(object):
     def __init__(self,id):
-        self.Id = id
+        self.d = id

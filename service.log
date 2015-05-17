@@ -1,0 +1,393 @@
+2015-05-17 12:47:44,276 INFO     sensor Initialzed
+2015-05-17 12:58:19,950 INFO     sensor Initialzed
+2015-05-17 12:58:19,951 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x24889f0>> | Bounce: 500
+2015-05-17 13:00:02,160 INFO     sensor Initialzed
+2015-05-17 13:00:02,161 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x12faa10>> | Bounce: 500
+2015-05-17 13:00:12,542 INFO     sensor Initialzed
+2015-05-17 13:00:12,545 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x1366810>> | Bounce: 500
+2015-05-17 13:03:07,697 INFO     sensor Initialzed
+2015-05-17 13:03:07,700 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x2a03c90>> | Bounce: 500
+2015-05-17 13:16:49,707 INFO     sensor Initialzed
+2015-05-17 13:16:49,708 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0xe34ad0>> | Bounce: 500
+2015-05-17 13:16:49,710 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0xe34ad0>> | Bounce: 500
+2015-05-17 13:16:49,712 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0xe34ad0>> | Bounce: 500
+2015-05-17 13:16:52,986 INFO     sensor Initialzed
+2015-05-17 13:16:52,987 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0xf36b10>> | Bounce: 500
+2015-05-17 13:16:53,383 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0xf36b10>> | Bounce: 500
+2015-05-17 13:16:53,398 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0xf36b10>> | Bounce: 500
+2015-05-17 13:17:56,322 INFO     sensor Initialzed
+2015-05-17 13:17:56,323 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x1979b10>> | Bounce: 500
+2015-05-17 13:17:56,325 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x1979b10>> | Bounce: 500
+2015-05-17 13:17:56,327 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x1979b10>> | Bounce: 500
+2015-05-17 13:18:48,840 INFO     sensor Initialzed
+2015-05-17 13:18:48,841 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0xe08b10>> | Bounce: 500
+2015-05-17 13:18:48,843 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0xe08b10>> | Bounce: 500
+2015-05-17 13:18:48,844 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0xe08b10>> | Bounce: 500
+2015-05-17 13:18:55,142 INFO     ledcontroller Initialzed
+2015-05-17 13:18:55,149 INFO     GameController Initialzed
+2015-05-17 13:18:55,723 INFO     New Instant Game Started
+2015-05-17 13:18:56,472 INFO     New Instant Game Started
+2015-05-17 13:19:01,490 INFO     New Instant Game Started
+2015-05-17 13:19:04,814 INFO     New Instant Game Started
+2015-05-17 13:28:49,827 INFO     Logger Created
+2015-05-17 13:28:49,832 INFO     sensor Initialzed
+2015-05-17 13:28:49,833 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x12f4b10>> | Bounce: 500
+2015-05-17 13:28:49,834 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x12f4b10>> | Bounce: 500
+2015-05-17 13:28:49,836 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x12f4b10>> | Bounce: 500
+2015-05-17 13:28:49,860 INFO     ledcontroller Initialzed
+2015-05-17 13:28:49,861 INFO     GameController Initialzed
+2015-05-17 13:29:21,450 INFO     Logger Created
+2015-05-17 13:29:31,472 INFO     sensor Initialzed
+2015-05-17 13:29:31,475 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x2331770>> | Bounce: 500
+2015-05-17 13:29:31,479 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x2331770>> | Bounce: 500
+2015-05-17 13:29:31,482 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x2331770>> | Bounce: 500
+2015-05-17 13:29:31,521 INFO     ledcontroller Initialzed
+2015-05-17 13:29:31,526 INFO     GameController Initialzed
+2015-05-17 13:39:53,541 INFO     New Instant Game Started
+2015-05-17 14:35:35,356 INFO     New Instant Game Started
+2015-05-17 14:43:23,264 INFO     Logger Created
+2015-05-17 14:43:23,289 INFO     sensor Initialzed
+2015-05-17 14:43:23,298 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x1c10db0>> | Bounce: 500
+2015-05-17 14:43:23,303 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x1c10db0>> | Bounce: 500
+2015-05-17 14:43:23,310 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x1c10db0>> | Bounce: 500
+2015-05-17 14:43:23,449 INFO     ledcontroller Initialzed
+2015-05-17 14:43:23,461 INFO     GameController Initialzed
+2015-05-17 14:43:25,409 INFO     New Instant Game Started
+2015-05-17 14:44:02,527 INFO     New Instant Game Started
+2015-05-17 14:44:03,910 INFO     New Instant Game Started
+2015-05-17 14:44:04,520 INFO     New Instant Game Started
+2015-05-17 14:44:07,863 INFO     New Instant Game Started
+2015-05-17 14:54:06,472 INFO     Logger Created
+2015-05-17 14:54:06,479 INFO     sensor Initialzed
+2015-05-17 14:54:06,480 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x20efb10>> | Bounce: 500
+2015-05-17 14:54:06,484 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x20efb10>> | Bounce: 500
+2015-05-17 14:54:06,488 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x20efb10>> | Bounce: 500
+2015-05-17 14:54:06,535 INFO     ledcontroller Initialzed
+2015-05-17 14:54:06,541 INFO     GameController Initialzed
+2015-05-17 14:54:45,300 INFO     New Instant Game Started
+2015-05-17 14:55:40,443 INFO     Logger Created
+2015-05-17 14:55:40,448 INFO     sensor Initialzed
+2015-05-17 14:55:40,449 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x1b5cb10>> | Bounce: 500
+2015-05-17 14:55:40,450 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x1b5cb10>> | Bounce: 500
+2015-05-17 14:55:40,451 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x1b5cb10>> | Bounce: 500
+2015-05-17 14:55:40,474 INFO     ledcontroller Initialzed
+2015-05-17 14:55:40,476 INFO     GameController Initialzed
+2015-05-17 14:55:41,928 INFO     New Instant Game Started
+2015-05-17 14:55:42,450 INFO     New Instant Game Started
+2015-05-17 14:55:50,140 INFO     New Instant Game Started
+2015-05-17 14:56:33,767 INFO     Logger Created
+2015-05-17 14:56:33,772 INFO     sensor Initialzed
+2015-05-17 14:56:33,773 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x1237a90>> | Bounce: 500
+2015-05-17 14:56:33,775 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x1237a90>> | Bounce: 500
+2015-05-17 14:56:33,776 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x1237a90>> | Bounce: 500
+2015-05-17 14:56:33,798 INFO     ledcontroller Initialzed
+2015-05-17 14:56:33,800 INFO     GameController Initialzed
+2015-05-17 14:57:32,141 INFO     Logger Created
+2015-05-17 14:57:32,160 INFO     sensor Initialzed
+2015-05-17 14:57:32,163 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x1a857b0>> | Bounce: 500
+2015-05-17 14:57:32,167 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x1a857b0>> | Bounce: 500
+2015-05-17 14:57:32,170 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x1a857b0>> | Bounce: 500
+2015-05-17 14:57:32,215 INFO     ledcontroller Initialzed
+2015-05-17 14:57:32,219 INFO     GameController Initialzed
+2015-05-17 14:57:54,958 INFO     New Instant Game Started
+2015-05-17 14:59:52,243 INFO     Logger Created
+2015-05-17 14:59:52,263 INFO     sensor Initialzed
+2015-05-17 14:59:52,266 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0xcb7d70>> | Bounce: 500
+2015-05-17 14:59:52,270 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0xcb7d70>> | Bounce: 500
+2015-05-17 14:59:52,274 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0xcb7d70>> | Bounce: 500
+2015-05-17 14:59:52,313 INFO     ledcontroller Initialzed
+2015-05-17 14:59:52,318 INFO     GameController Initialzed
+2015-05-17 15:01:32,464 INFO     Logger Created
+2015-05-17 15:01:32,482 INFO     sensor Initialzed
+2015-05-17 15:01:32,485 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x2a28d70>> | Bounce: 500
+2015-05-17 15:01:32,488 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x2a28d70>> | Bounce: 500
+2015-05-17 15:01:32,492 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x2a28d70>> | Bounce: 500
+2015-05-17 15:01:32,530 INFO     ledcontroller Initialzed
+2015-05-17 15:01:32,533 INFO     GameController Initialzed
+2015-05-17 15:01:49,019 INFO     Game Started between player1 and player2
+2015-05-17 15:02:06,283 INFO     New Live Game Started between player1 and player2
+2015-05-17 15:03:00,171 INFO     Game Started between player1 and player2
+2015-05-17 15:03:04,841 INFO     New Live Game Started between player1 and player2
+2015-05-17 15:03:08,813 INFO     New Instant Game Started
+2015-05-17 15:03:09,650 INFO     New Instant Game Started
+2015-05-17 15:07:57,224 INFO     Logger Created
+2015-05-17 15:08:16,175 INFO     Logger Created
+2015-05-17 15:08:16,182 INFO     sensor Initialzed
+2015-05-17 15:08:16,183 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x1f46650>> | Bounce: 500
+2015-05-17 15:08:16,185 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x1f46650>> | Bounce: 500
+2015-05-17 15:08:16,188 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x1f46650>> | Bounce: 500
+2015-05-17 15:08:16,460 INFO     ledcontroller Initialzed
+2015-05-17 15:08:16,462 INFO     GameController Initialzed
+2015-05-17 15:08:16,743 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-17 15:09:25,530 INFO     Logger Created
+2015-05-17 15:09:25,544 INFO     sensor Initialzed
+2015-05-17 15:09:25,545 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,546 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,547 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,548 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,548 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,549 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,550 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,551 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,551 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,552 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,553 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,553 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,554 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,555 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,556 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,557 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,558 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,559 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,559 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,560 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,561 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,562 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,562 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,563 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,564 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,564 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,565 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,566 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,567 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,568 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,568 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,569 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,570 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,570 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,571 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,572 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,573 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,573 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,574 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,576 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,577 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,577 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,578 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,579 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,580 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,580 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,581 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,582 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,583 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,583 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,584 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,585 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,585 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,586 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,587 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,588 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,589 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,590 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,591 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,592 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,592 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,593 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,594 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,595 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,595 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,596 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,597 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,598 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,599 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,600 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,600 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,601 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,602 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,603 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,603 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,604 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,605 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,606 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,608 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,608 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,609 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,610 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,611 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,611 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,612 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,613 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,614 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,615 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,620 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,622 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,622 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,623 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,624 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,625 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,625 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,626 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,627 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,628 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,628 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,630 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,630 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,631 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,632 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,633 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,634 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,635 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,636 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,637 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,638 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,639 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,640 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,641 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,642 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,643 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,645 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,646 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,647 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,649 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,650 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,652 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,653 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,654 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,655 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,655 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,656 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,657 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,658 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,659 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,660 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,661 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,662 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,663 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,664 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,664 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,665 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,666 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,667 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,668 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,668 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,669 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,670 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,671 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,671 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,672 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,673 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,673 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,674 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,675 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,676 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,677 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,677 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,678 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,679 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,680 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,680 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,681 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,682 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,683 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,683 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,684 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,685 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,686 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,687 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,687 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,688 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,689 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,689 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,690 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,691 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,692 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,693 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,694 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,695 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,696 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,696 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,697 ERROR    Traceback (most recent call last):
+2015-05-17 15:09:25,698 ERROR    Traceback (most recent call last):
+2015-05-17 16:37:34,251 INFO     Logger Created
+2015-05-17 16:37:34,258 INFO     sensor Initialzed
+2015-05-17 16:37:34,259 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x1778650>> | Bounce: 500
+2015-05-17 16:37:34,260 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x1778650>> | Bounce: 500
+2015-05-17 16:37:34,262 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x1778650>> | Bounce: 500
+2015-05-17 16:37:34,282 INFO     ledcontroller Initialzed
+2015-05-17 16:37:34,283 INFO     GameController Initialzed
+2015-05-17 16:37:34,465 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-17 16:43:48,394 INFO     Logger Created
+2015-05-17 16:43:48,400 INFO     sensor Initialzed
+2015-05-17 16:43:48,401 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x908630>> | Bounce: 500
+2015-05-17 16:43:48,403 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x908630>> | Bounce: 500
+2015-05-17 16:43:48,404 INFO     Sensor added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x908630>> | Bounce: 500
+2015-05-17 16:43:48,429 INFO     ledcontroller Initialzed
+2015-05-17 16:43:48,430 INFO     GameController Initialzed
+2015-05-17 16:43:48,632 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-17 16:44:30,792 INFO     Logger Created
+2015-05-17 16:44:30,798 INFO     sensor Initialzed
+2015-05-17 16:44:30,799 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x764df630>> | Bounce: 500
+2015-05-17 16:44:30,801 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x764df630>> | Bounce: 500
+2015-05-17 16:44:30,802 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x764df630>> | Bounce: 500
+2015-05-17 16:44:30,824 INFO     ledcontroller Initialzed
+2015-05-17 16:44:30,826 INFO     GameController Initialzed
+2015-05-17 16:44:31,012 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-17 16:44:32,751 INFO     New Instant Game Started
+2015-05-17 16:44:34,778 INFO     New Instant Game Started
+2015-05-17 16:44:36,177 INFO     New Instant Game Started
+2015-05-17 16:44:38,859 INFO     New Instant Game Started
+2015-05-17 16:44:47,210 INFO     New Instant Game Started
+2015-05-17 16:44:52,466 INFO     New Instant Game Started
+2015-05-17 16:45:07,936 INFO     Game Started between player1 and player2
+2015-05-17 16:45:07,939 INFO     New Live Game Started between player1 and player2
+2015-05-17 16:45:56,102 INFO     Game Started between player1 and player2
+2015-05-17 16:45:56,107 INFO     New Live Game Started between player1 and player2
+2015-05-17 16:46:02,347 INFO     Game Started between player1 and player2
+2015-05-17 16:46:02,350 INFO     New Live Game Started between player1 and player2
+2015-05-17 16:46:17,786 INFO     Game Started between player1 and player2
+2015-05-17 16:46:17,788 INFO     New Live Game Started between player1 and player2
+2015-05-17 16:46:25,280 INFO     Game Started between player1 and player2
+2015-05-17 16:46:25,283 INFO     New Live Game Started between player1 and player2
+2015-05-17 16:46:49,699 INFO     Logger Created
+2015-05-17 16:46:49,705 INFO     sensor Initialzed
+2015-05-17 16:46:49,706 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x1fd4690>> | Bounce: 500
+2015-05-17 16:46:49,707 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x1fd4690>> | Bounce: 500
+2015-05-17 16:46:49,708 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x1fd4690>> | Bounce: 500
+2015-05-17 16:46:49,729 INFO     ledcontroller Initialzed
+2015-05-17 16:46:49,730 INFO     GameController Initialzed
+2015-05-17 16:46:49,912 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-17 16:46:51,905 ERROR    Traceback (most recent call last):
+2015-05-17 16:46:51,906 ERROR      File "/home/pi/development/foosball/GameController.py", line 47, in player1scored
+2015-05-17 16:46:51,907 ERROR    self.messages.GoalScored(self.game.id, self.game.player1)
+2015-05-17 16:46:51,907 ERROR    AttributeError
+2015-05-17 16:46:51,908 ERROR    :
+2015-05-17 16:46:51,908 ERROR    'MessageController' object has no attribute 'GoalScored'
+2015-05-17 16:46:52,576 ERROR    Traceback (most recent call last):
+2015-05-17 16:46:52,577 ERROR      File "/home/pi/development/foosball/GameController.py", line 47, in player1scored
+2015-05-17 16:46:52,577 ERROR    self.messages.GoalScored(self.game.id, self.game.player1)
+2015-05-17 16:46:52,578 ERROR    AttributeError
+2015-05-17 16:46:52,579 ERROR    :
+2015-05-17 16:46:52,579 ERROR    'MessageController' object has no attribute 'GoalScored'
+2015-05-17 16:47:35,945 INFO     Logger Created
+2015-05-17 16:47:35,949 INFO     sensor Initialzed
+2015-05-17 16:47:35,950 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x764ff630>> | Bounce: 500
+2015-05-17 16:47:35,953 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x764ff630>> | Bounce: 500
+2015-05-17 16:47:35,955 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x764ff630>> | Bounce: 500
+2015-05-17 16:47:35,975 INFO     ledcontroller Initialzed
+2015-05-17 16:47:35,976 INFO     GameController Initialzed
+2015-05-17 16:47:36,141 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-17 17:13:56,753 INFO     Logger Created
+2015-05-17 17:13:56,758 INFO     sensor Initialzed
+2015-05-17 17:13:56,759 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x16ef690>> | Bounce: 500
+2015-05-17 17:13:56,761 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x16ef690>> | Bounce: 500
+2015-05-17 17:13:56,762 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x16ef690>> | Bounce: 500
+2015-05-17 17:13:56,785 INFO     ledcontroller Initialzed
+2015-05-17 17:13:57,030 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-17 17:14:09,456 INFO     client-game:started message received
+2015-05-17 17:14:09,458 INFO     client-game:started message received
+2015-05-17 17:14:09,505 INFO     New Live Game Started between player1 and player2
+2015-05-17 17:14:21,859 INFO     client-game:started message received
+2015-05-17 17:14:21,860 INFO     client-game:started message received
+2015-05-17 17:14:21,952 INFO     New Live Game Started between player1 and player2
+2015-05-17 17:14:27,146 INFO     client-game:started message received
+2015-05-17 17:14:27,146 INFO     client-game:started message received
+2015-05-17 17:14:27,188 INFO     New Live Game Started between player1 and player2
+2015-05-17 17:15:47,589 INFO     Logger Created
+2015-05-17 17:15:47,596 INFO     sensor Initialzed
+2015-05-17 17:15:47,598 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0x764ee6b0>> | Bounce: 500
+2015-05-17 17:15:47,601 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0x764ee6b0>> | Bounce: 500
+2015-05-17 17:15:47,602 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0x764ee6b0>> | Bounce: 500
+2015-05-17 17:15:47,624 INFO     ledcontroller Initialzed
+2015-05-17 17:15:47,866 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-17 17:15:50,297 INFO     New Instant Game Started
+2015-05-17 17:15:56,081 INFO     New Instant Game Started
