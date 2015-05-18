@@ -20,6 +20,7 @@ class MessageController(Configurable):
         self.client = pusherclient.Pusher(key, secret=secret) 
         self.client.connection.bind(u'pusher:connection_established', self.connect_handler)
         self.client.connect()
+        logger.info("%s Initialized", __name__)
 
     def send_message(self, event, message):
         msg = jsonpickle.encode(message, unpicklable=False)
