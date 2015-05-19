@@ -1,5 +1,5 @@
 from enum import Enum
-from messaging.messagecontroller import *
+from messagecontroller import *
 from sensor import *
 from ledcontroller import *
 

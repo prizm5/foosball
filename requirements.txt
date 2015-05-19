@@ -1,3 +1,4 @@
 pusher
 jsonpickle
 pusherclient
+enum
