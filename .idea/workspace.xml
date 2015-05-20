@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45135571-407c-4e7f-8721-9724b6d675bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameController.py" afterPath="$PROJECT_DIR$/GameController.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ledcontroller.py" afterPath="$PROJECT_DIR$/ledcontroller.py" />
     </list>
     <list id="7df519bf-19c4-46d5-a00c-d60ce3755483" name="Rejected commit: Default" comment="return the leds&#10;" />
     <ignored path="foosball.iws" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ledcontroller.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ledcontroller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ledcontroller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.1034484" vertical-offset="1054" max-vertical-offset="2193">
-              <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+            <state vertical-scroll-proportion="-0.25834543" vertical-offset="1504" max-vertical-offset="2193">
+              <caret line="78" column="22" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="22" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameController.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameController.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66295266" vertical-offset="153" max-vertical-offset="1581">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1581">
               <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/service.log" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/game.ini" />
-        <option value="$PROJECT_DIR$/ledcontroller.py" />
         <option value="$PROJECT_DIR$/GameController.py" />
+        <option value="$PROJECT_DIR$/ledcontroller.py" />
       </list>
     </option>
   </component>
@@ -899,16 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ledcontroller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1034484" vertical-offset="1054" max-vertical-offset="2193">
-          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rpi_ws281x/python/examples/strandtest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="1734">
@@ -929,10 +919,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GameController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66295266" vertical-offset="153" max-vertical-offset="1581">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1581">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ledcontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.25834543" vertical-offset="1504" max-vertical-offset="2193">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
