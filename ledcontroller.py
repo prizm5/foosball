@@ -20,7 +20,7 @@ class LedController(object):
         self.idle = True
 
         # Create NeoPixel object with appropriate configuration.
-        self.strip = Adafruit_NeoPixel(19, self.LED_PIN, self.LED_FREQ_HZ, self.LED_DMA, self.LED_INVERT,
+        self.strip = Adafruit_NeoPixel(20, self.LED_PIN, self.LED_FREQ_HZ, self.LED_DMA, self.LED_INVERT,
                                        self.LED_BRIGHTNESS)
         # Initialize the library (must be called once before other functions).
         self.strip.begin()
