@@ -57,21 +57,21 @@ class GameController(Configurable):
 
     def player1scored(self, channel):
         if self.state != GameState.idle:
-        	if self.state == GameState.live_game:
-            		self.messages.send_goal_scored(self.game.Id, self.game.player1)
-            	self.game.player1Score += 1
-            	self.led.set_player_score(1, self.game.player1Score)
-            	self.logger.info("Player %s scored!", self.game.player1)
-            	self.has_game_ended()
+            if self.state == GameState.live_game:
+                self.messages.send_goal_scored(self.game.Id, self.game.player1)
+            self.game.player1Score += 1
+            self.led.set_player_score(1, self.game.player1Score)
+            self.logger.info("Player %s scored!", self.game.player1)
+            self.has_game_ended()
 
     def player2scored(self, channel):
         if self.state != GameState.idle:
-        	if self.state == GameState.live_game:
-            		self.messages.send_goal_scored(self.game.Id, self.game.player2)
-            	self.game.player2Score += 1
-            	self.led.set_player_score(2, self.game.player2Score)
-            	self.logger.info("Player %s scored!", self.game.player2)
-            	self.has_game_ended()
+            if self.state == GameState.live_game:
+                self.messages.send_goal_scored(self.game.Id, self.game.player2)
+            self.game.player2Score += 1
+            self.led.set_player_score(2, self.game.player2Score)
+            self.logger.info("Player %s scored!", self.game.player2)
+            self.has_game_ended()
 
     def has_game_ended(self):
         if self.game.player1Score == 10 or self.game.player2Score == 10:
