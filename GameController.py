@@ -28,7 +28,9 @@ class GameController(Configurable):
 
         self.logger = logger
         self.game = Game()
+
         self.messages = MessageController(logger, self.start_live_game)
+
         self.led = LedController(logger)
         self.run_idle()
         logger.info("%s Initialized", __name__)
@@ -46,11 +48,12 @@ class GameController(Configurable):
         self.logger.info("New Instant Game Started")
 
     def start_live_game(self, game):
+        #if self.state == GameState.idle:
         self.state = GameState.live_game
         self.game = game
         self.led.clear()
-        self.led.flash_player_colors()
         self.logger.info("New Live Game Started between %s and %s", self.game.player1, self.game.player2)
+        self.led.flash_player_colors()
 
     def player1scored(self, channel):
         if self.state != GameState.idle:
