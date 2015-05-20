@@ -109,9 +109,9 @@ class LedController(object):
         for j in range(256*iterations):
             if not self.idle:
                 break
-            for i in range(0, self.LED_OFFSET-1):
+            for i in range(0, self.LED_OFFSET):
                 self.strip.setPixelColor(i, self.wheel(((i * 256 / self.LED_OFFSET) + j) & 255))
-            for i in range(0, self.LED_OFFSET-1):
+            for i in range(0, self.LED_OFFSET):
                 self.strip.setPixelColor(self.LED_OFFSET + i, self.wheel(((self.LED_OFFSET + i * 256 / self.LED_OFFSET) + j) & 255))
 
             self.strip.show()
