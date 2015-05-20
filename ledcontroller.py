@@ -107,11 +107,12 @@ class LedController(object):
         self.idle = True
         """Draw rainbow that uniformly distributes itself across all pixels."""
         for j in range(256*iterations):
-            if self.idle == False:
+            if not self.idle:
                 break
-            for i in range(self.strip.numPixels() - self.LED_OFFSET):
+            for i in range(0, self.LED_OFFSET-1):
                 self.strip.setPixelColor(i, self.wheel(((i * 256 / self.LED_OFFSET) + j) & 255))
-            for i in range(self.LED_OFFSET+1, self.strip.numPixels()):
-                self.strip.setPixelColor(i, self.wheel(((i * 256 / self.LED_OFFSET) + j) & 255))
+            for i in range(0, self.LED_OFFSET-1):
+                self.strip.setPixelColor(self.LED_OFFSET + i, self.wheel(((self.LED_OFFSET + i * 256 / self.LED_OFFSET) + j) & 255))
+
             self.strip.show()
             time.sleep(wait_ms/1000.0)
