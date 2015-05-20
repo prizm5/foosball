@@ -1,0 +1,170 @@
+2015-05-20 13:05:50,000 INFO     Logger Created
+2015-05-20 13:05:50,027 INFO     sensor Initialized
+2015-05-20 13:05:50,037 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0xb652ac50>> | Bounce: 500
+2015-05-20 13:05:50,062 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0xb652ac50>> | Bounce: 500
+2015-05-20 13:05:50,084 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0xb652ac50>> | Bounce: 500
+2015-05-20 13:05:50,201 INFO     messagecontroller Initialized
+2015-05-20 13:05:50,258 INFO     ledcontroller Initialized
+2015-05-20 13:05:51,353 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-20 13:05:56,389 INFO     New Instant Game Started
+2015-05-20 13:05:59,649 INFO     New Instant Game Started
+2015-05-20 13:05:59,752 ERROR    Traceback (most recent call last):
+2015-05-20 13:05:59,762 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:05:59,777 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:05:59,788 ERROR    AttributeError
+2015-05-20 13:05:59,798 ERROR    :
+2015-05-20 13:05:59,809 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:00,619 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:00,629 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:00,639 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:00,651 ERROR    AttributeError
+2015-05-20 13:06:00,660 ERROR    :
+2015-05-20 13:06:00,671 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:03,653 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:03,664 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:03,676 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:03,685 ERROR    AttributeError
+2015-05-20 13:06:03,697 ERROR    :
+2015-05-20 13:06:03,706 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:05,670 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:05,681 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:05,692 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:05,703 ERROR    AttributeError
+2015-05-20 13:06:05,714 ERROR    :
+2015-05-20 13:06:05,724 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:06,271 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:06,281 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:06,293 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:06,303 ERROR    AttributeError
+2015-05-20 13:06:06,315 ERROR    :
+2015-05-20 13:06:06,325 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:09,622 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:09,632 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:09,644 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:09,655 ERROR    AttributeError
+2015-05-20 13:06:09,666 ERROR    :
+2015-05-20 13:06:09,676 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:11,706 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:11,716 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:11,728 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:11,739 ERROR    AttributeError
+2015-05-20 13:06:11,751 ERROR    :
+2015-05-20 13:06:11,761 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:13,954 INFO     New Instant Game Started
+2015-05-20 13:06:17,865 INFO     GameController Initialized
+2015-05-20 13:06:22,746 INFO     New Instant Game Started
+2015-05-20 13:06:28,170 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:28,180 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:28,191 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:28,200 ERROR    AttributeError
+2015-05-20 13:06:28,211 ERROR    :
+2015-05-20 13:06:28,221 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:28,773 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:28,782 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:28,792 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:28,802 ERROR    AttributeError
+2015-05-20 13:06:28,812 ERROR    :
+2015-05-20 13:06:28,822 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:30,531 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:30,541 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:30,551 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:30,561 ERROR    AttributeError
+2015-05-20 13:06:30,571 ERROR    :
+2015-05-20 13:06:30,581 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:31,140 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:31,150 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:31,160 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:31,170 ERROR    AttributeError
+2015-05-20 13:06:31,180 ERROR    :
+2015-05-20 13:06:31,190 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:31,874 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:31,884 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:31,895 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:31,905 ERROR    AttributeError
+2015-05-20 13:06:31,915 ERROR    :
+2015-05-20 13:06:31,925 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:33,205 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:33,220 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:33,230 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:33,240 ERROR    AttributeError
+2015-05-20 13:06:33,250 ERROR    :
+2015-05-20 13:06:33,260 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:34,160 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:34,170 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:34,181 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:34,191 ERROR    AttributeError
+2015-05-20 13:06:34,200 ERROR    :
+2015-05-20 13:06:34,211 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:34,964 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:34,974 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:34,984 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:34,994 ERROR    AttributeError
+2015-05-20 13:06:35,004 ERROR    :
+2015-05-20 13:06:35,014 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:35,708 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:35,718 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:35,729 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:35,738 ERROR    AttributeError
+2015-05-20 13:06:35,748 ERROR    :
+2015-05-20 13:06:35,758 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:36,516 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:36,526 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:36,537 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:36,547 ERROR    AttributeError
+2015-05-20 13:06:36,557 ERROR    :
+2015-05-20 13:06:36,567 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:06:37,351 ERROR    Traceback (most recent call last):
+2015-05-20 13:06:37,360 ERROR      File "/home/pi/development/foosball/GameController.py", line 48, in player1scored
+2015-05-20 13:06:37,371 ERROR    self.messages.send_goal_scored(self.game.id, self.game.player1)
+2015-05-20 13:06:37,381 ERROR    AttributeError
+2015-05-20 13:06:37,391 ERROR    :
+2015-05-20 13:06:37,401 ERROR    'Game' object has no attribute 'id'
+2015-05-20 13:11:54,365 INFO     Logger Created
+2015-05-20 13:11:54,387 INFO     sensor Initialized
+2015-05-20 13:11:54,396 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0xb6612c50>> | Bounce: 500
+2015-05-20 13:11:54,421 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0xb6612c50>> | Bounce: 500
+2015-05-20 13:11:54,438 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0xb6612c50>> | Bounce: 500
+2015-05-20 13:11:54,551 INFO     messagecontroller Initialized
+2015-05-20 13:11:54,603 INFO     ledcontroller Initialized
+2015-05-20 13:11:55,625 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-20 13:11:57,656 INFO     New Instant Game Started
+2015-05-20 13:12:00,830 INFO     New Instant Game Started
+2015-05-20 13:12:05,129 INFO     New Instant Game Started
+2015-05-20 13:12:06,162 INFO     New Instant Game Started
+2015-05-20 13:12:06,815 INFO     New Instant Game Started
+2015-05-20 13:12:07,382 INFO     New Instant Game Started
+2015-05-20 13:12:08,261 INFO     New Instant Game Started
+2015-05-20 13:12:08,856 INFO     New Instant Game Started
+2015-05-20 13:12:09,479 INFO     New Instant Game Started
+2015-05-20 13:12:10,091 INFO     New Instant Game Started
+2015-05-20 13:12:10,972 INFO     New Instant Game Started
+2015-05-20 13:12:12,302 INFO     New Instant Game Started
+2015-05-20 13:12:13,288 INFO     New Instant Game Started
+2015-05-20 13:12:13,887 INFO     New Instant Game Started
+2015-05-20 13:12:14,684 INFO     New Instant Game Started
+2015-05-20 13:12:15,190 INFO     New Instant Game Started
+2015-05-20 13:12:15,848 INFO     New Instant Game Started
+2015-05-20 13:12:16,375 INFO     New Instant Game Started
+2015-05-20 13:12:16,964 INFO     New Instant Game Started
+2015-05-20 13:12:17,543 INFO     New Instant Game Started
+2015-05-20 13:12:18,515 INFO     New Instant Game Started
+2015-05-20 13:12:21,566 INFO     player: 1 score: 1
+2015-05-20 13:12:21,577 ERROR    Traceback (most recent call last):
+2015-05-20 13:12:21,586 ERROR      File "/home/pi/development/foosball/GameController.py", line 50, in player1scored
+2015-05-20 13:12:21,597 ERROR    self.led.set_player_score(1, self.game.player1Score)
+2015-05-20 13:12:21,607 ERROR      File "/home/pi/development/foosball/ledcontroller.py", line 55, in set_player_score
+2015-05-20 13:12:21,620 ERROR    self.LEDS[i] = 1
+2015-05-20 13:12:21,630 ERROR    TypeError
+2015-05-20 13:12:21,640 ERROR    :
+2015-05-20 13:12:21,650 ERROR    'NoneType' object does not support item assignment
+2015-05-20 13:12:22,259 INFO     GameController Initialized
+2015-05-20 13:12:43,010 INFO     New Instant Game Started
+2015-05-20 13:12:47,380 INFO     player: 1 score: 1
+2015-05-20 13:12:47,389 ERROR    Traceback (most recent call last):
+2015-05-20 13:12:47,398 ERROR      File "/home/pi/development/foosball/GameController.py", line 50, in player1scored
+2015-05-20 13:12:47,408 ERROR    self.led.set_player_score(1, self.game.player1Score)
+2015-05-20 13:12:47,417 ERROR      File "/home/pi/development/foosball/ledcontroller.py", line 55, in set_player_score
+2015-05-20 13:12:47,427 ERROR    self.LEDS[i] = 1
+2015-05-20 13:12:47,437 ERROR    TypeError
+2015-05-20 13:12:47,446 ERROR    :
+2015-05-20 13:12:47,455 ERROR    'NoneType' object does not support item assignment

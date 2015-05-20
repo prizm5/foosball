@@ -1,0 +1,54 @@
+2015-05-19 17:08:56,398 INFO     Logger Created
+2015-05-19 17:08:56,416 INFO     sensor Initialized
+2015-05-19 17:08:56,421 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0xb65f9c50>> | Bounce: 500
+2015-05-19 17:08:56,433 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0xb65f9c50>> | Bounce: 500
+2015-05-19 17:08:56,453 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0xb65f9c50>> | Bounce: 500
+2015-05-19 17:08:56,554 INFO     messagecontroller Initialized
+2015-05-19 17:08:56,594 INFO     ledcontroller Initialized
+2015-05-19 17:08:57,859 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-19 17:09:17,103 ERROR    Traceback (most recent call last):
+2015-05-19 17:09:17,108 ERROR      File "main.py", line 64, in <module>
+2015-05-19 17:09:17,113 ERROR    main()
+2015-05-19 17:09:17,118 ERROR      File "main.py", line 51, in main
+2015-05-19 17:09:17,124 ERROR    game = GameController(logger)
+2015-05-19 17:09:17,129 ERROR      File "/home/pi/development/foosball/GameController.py", line 30, in __init__
+2015-05-19 17:09:17,135 ERROR    self.run_idle()
+2015-05-19 17:09:17,140 ERROR      File "/home/pi/development/foosball/GameController.py", line 70, in run_idle
+2015-05-19 17:09:17,146 ERROR    self.led.rainbow_cycle()
+2015-05-19 17:09:17,151 ERROR      File "/home/pi/development/foosball/ledcontroller.py", line 94, in rainbow_cycle
+2015-05-19 17:09:17,157 ERROR    time.sleep(wait_ms/1000.0)
+2015-05-19 17:09:17,161 ERROR    KeyboardInterrupt
+2015-05-19 17:10:52,411 INFO     Logger Created
+2015-05-19 17:10:52,429 INFO     sensor Initialized
+2015-05-19 17:10:52,434 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0xb65c8c50>> | Bounce: 500
+2015-05-19 17:10:52,453 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0xb65c8c50>> | Bounce: 500
+2015-05-19 17:10:52,460 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0xb65c8c50>> | Bounce: 500
+2015-05-19 17:10:52,564 INFO     messagecontroller Initialized
+2015-05-19 17:10:52,611 INFO     ledcontroller Initialized
+2015-05-19 17:10:53,615 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-19 17:11:13,841 ERROR    Traceback (most recent call last):
+2015-05-19 17:11:13,846 ERROR      File "main.py", line 64, in <module>
+2015-05-19 17:11:13,851 ERROR    main()
+2015-05-19 17:11:13,856 ERROR      File "main.py", line 51, in main
+2015-05-19 17:11:13,861 ERROR    game = GameController(logger)
+2015-05-19 17:11:13,866 ERROR      File "/home/pi/development/foosball/GameController.py", line 30, in __init__
+2015-05-19 17:11:13,873 ERROR    self.run_idle()
+2015-05-19 17:11:13,877 ERROR      File "/home/pi/development/foosball/GameController.py", line 70, in run_idle
+2015-05-19 17:11:13,884 ERROR    self.led.rainbow_cycle()
+2015-05-19 17:11:13,889 ERROR      File "/home/pi/development/foosball/ledcontroller.py", line 94, in rainbow_cycle
+2015-05-19 17:11:13,895 ERROR    time.sleep(wait_ms/1000.0)
+2015-05-19 17:11:13,900 ERROR    KeyboardInterrupt
+2015-05-19 17:11:22,650 INFO     Logger Created
+2015-05-19 17:11:22,667 INFO     sensor Initialized
+2015-05-19 17:11:22,672 INFO     Sensor added: Port: 17 | Callback: <bound method GameController.player1scored of <GameController.GameController object at 0xb65d1c50>> | Bounce: 500
+2015-05-19 17:11:22,692 INFO     Sensor added: Port: 22 | Callback: <bound method GameController.player2scored of <GameController.GameController object at 0xb65d1c50>> | Bounce: 500
+2015-05-19 17:11:22,699 INFO     Button added: Port: 23 | Callback: <bound method GameController.start_instant_game of <GameController.GameController object at 0xb65d1c50>> | Bounce: 500
+2015-05-19 17:11:22,804 INFO     messagecontroller Initialized
+2015-05-19 17:11:22,844 INFO     ledcontroller Initialized
+2015-05-19 17:11:23,906 ERROR    No handlers could be found for logger "pusherclient.connection"
+2015-05-19 17:11:50,619 INFO     GameController Initialized
+2015-05-19 17:12:12,271 INFO     New Instant Game Started
+2015-05-19 17:12:24,215 INFO     New Instant Game Started
+2015-05-19 17:12:29,325 INFO     New Instant Game Started
+2015-05-19 17:12:37,274 INFO     New Instant Game Started
+2015-05-19 17:12:41,607 INFO     New Instant Game Started
