@@ -7,7 +7,7 @@ class LedController(object):
     def __init__(self, logger):
         # LED strip configuration:
         self.logger = logger
-        self.LED_COUNT      = 20      # Number of LED pixels.
+        self.LED_COUNT      = 19      # Number of LED pixels.
         self.LED_OFFSET     = self.LED_COUNT / 2
         self.LED_PIN        = 18      # GPIO pin connected to the pixels (must support PWM!).
         self.LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)
