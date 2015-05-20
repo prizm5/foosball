@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45135571-407c-4e7f-8721-9724b6d675bd" name="Default" comment="return the leds&#10;">
+    <list default="true" id="45135571-407c-4e7f-8721-9724b6d675bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ledcontroller.py" afterPath="$PROJECT_DIR$/ledcontroller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,8 +31,8 @@
       <file leaf-file-name="ledcontroller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ledcontroller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70520234" vertical-offset="977" max-vertical-offset="2108">
-              <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+            <state vertical-scroll-proportion="1.0520232" vertical-offset="151" max-vertical-offset="2108">
+              <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -405,7 +405,8 @@
     <MESSAGE value="project stuff" />
     <MESSAGE value="return the leds&#10;" />
     <MESSAGE value="trying to fix the player color flash&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to fix the player color flash&#10;" />
+    <MESSAGE value="debugging leds&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging leds&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -870,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ledcontroller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70520234" vertical-offset="977" max-vertical-offset="2108">
-          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+        <state vertical-scroll-proportion="1.0520232" vertical-offset="151" max-vertical-offset="2108">
+          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
