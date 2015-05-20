@@ -84,6 +84,6 @@ class GameController(Configurable):
 
     def run_idle(self):
         self.state = GameState.idle
-        self.led.idle == true;
+        self.led.idle = True;
         self.led.rainbow_cycle()
 
