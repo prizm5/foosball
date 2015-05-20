@@ -114,6 +114,8 @@ class LedController(object):
     def rainbow_cycle(self, wait_ms=20, iterations=5):
         """Draw rainbow that uniformly distributes itself across all pixels."""
         for j in range(256*iterations):
+            if not self.idle:
+                break
             for i in range(self.strip.numPixels()):
                 self.strip.setPixelColor(i, self.wheel(((i * 256 / self.strip.numPixels()) + j) & 255))
             self.strip.show()
