@@ -79,6 +79,7 @@ class GameController(Configurable):
             if self.state == GameState.live_game:
                 self.messages.send_end_game(self.game)
             self.state = GameState.idle
+            self.led.flash_player_colors()
             self.run_idle()
             self.logger.info("Game has ended!")
 
