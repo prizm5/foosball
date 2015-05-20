@@ -6,6 +6,7 @@ from neopixel import *
 class LedController(object):
     def __init__(self, logger):
         # LED strip configuration:
+        self.logger = logger
         self.LED_COUNT      = 20      # Number of LED pixels.
         self.LED_OFFSET     = self.LED_COUNT / 2
         self.LED_PIN        = 18      # GPIO pin connected to the pixels (must support PWM!).
@@ -13,11 +14,10 @@ class LedController(object):
         self.LED_DMA        = 5       # DMA channel to use for generating signal (try 5)
         self.LED_BRIGHTNESS = 255     # Set to 0 for darkest and 255 for brightest
         self.LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
-        self.LEDS = self.make_led_values()
-        self.idle = True
         self.player1color = Color(0, 0, 255)
         self.player2color = Color(0, 255, 0)
-        self.logger = logger
+        self.LEDS = self.make_led_values()
+        self.idle = True
 
         # Create NeoPixel object with appropriate configuration.
         self.strip = Adafruit_NeoPixel(self.LED_COUNT, self.LED_PIN, self.LED_FREQ_HZ, self.LED_DMA, self.LED_INVERT,
