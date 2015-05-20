@@ -16,7 +16,8 @@ class LedController(object):
         self.LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
         self.player1color = Color(0, 0, 255)
         self.player2color = Color(0, 255, 0)
-        self.LEDS = self.make_led_values()
+        self.LEDS = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 1, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0, 19: 0}
+        #self.make_led_values()
         self.idle = True
 
         # Create NeoPixel object with appropriate configuration.
@@ -40,7 +41,6 @@ class LedController(object):
             for i in (0, self.LED_OFFSET-1):
                 self.LEDS[i] = p1
                 self.LEDS[self.LED_OFFSET + i] = p2
-                time.sleep(.1)
             self._update_leds()
             time.sleep(.5)
         self.clear()
@@ -77,7 +77,7 @@ class LedController(object):
     def _update_leds(self):
         self.logger.info("Updating LEDS: %s", self.LEDS)
         for i in range(0, self.LED_COUNT-1):
-            color = Color(0, 0, 0)
+            color = Color(0, 0, 255)
             if self.LEDS[i] == 1:
                 if i < self.LED_OFFSET:
                     color = self.player1color
