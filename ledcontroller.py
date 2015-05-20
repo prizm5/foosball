@@ -103,16 +103,19 @@ class LedController(object):
             pos -= 170
             return Color(0, pos * 3, 255 - pos * 3)
 
-    def rainbow_cycle(self, wait_ms=20, iterations=5):
-        self.idle = True
+      def rainbow(strip, wait_ms=20, iterations=1):
+        """Draw rainbow that fades across all pixels at once."""
+        for j in range(256*iterations):
+            for i in range(strip.numPixels()):
+                strip.setPixelColor(i, wheel((i+j) & 255))
+            strip.show()
+            time.sleep(wait_ms/1000.0)
+
+    def rainbowCycle(strip, wait_ms=20, iterations=5):
         """Draw rainbow that uniformly distributes itself across all pixels."""
         for j in range(256*iterations):
-            if not self.idle:
-                break
-            for i in range(0, self.LED_OFFSET):
-                self.strip.setPixelColor(i, self.wheel(((i * 256 / self.LED_OFFSET) + j) & 255))
-            for i in range(0, self.LED_OFFSET):
-                self.strip.setPixelColor(self.LED_OFFSET + i, self.wheel(((self.LED_OFFSET + i * 256 / self.LED_OFFSET) + j) & 255))
-
-            self.strip.show()
+            for i in range(strip.numPixels()):
+                strip.setPixelColor(i, wheel(((i * 256 / strip.numPixels()) + j) & 255))
+            strip.show()
             time.sleep(wait_ms/1000.0)
+
