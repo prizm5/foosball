@@ -19,9 +19,12 @@ class GameController(Configurable):
 
         sensor_config = self.ConfigSectionMap('sensor')
         sensors = SensorController(logger)
+
         sensors.AddSensor(sensor_config['sensor1port'], self.player1scored, sensor_config['sensor1bounce'])
         sensors.AddSensor(sensor_config['sensor2port'], self.player2scored, sensor_config['sensor2bounce'])
+
         sensors.AddButton(sensor_config['greenbuttonport'], self.start_instant_game, sensor_config['greenbuttonbounce'])
+        sensors.AddButton(sensor_config['redbuttonport'], self.start_instant_game, sensor_config['redbuttonbounce'])
 
         self.logger = logger
         self.game = Game()
@@ -30,16 +33,23 @@ class GameController(Configurable):
         self.run_idle()
         logger.info("%s Initialized", __name__)
 
+    def handle_red_button(self):
+        if self.state == GameState.instant_game or self.state == GameState.live_game:
+            self.led.clear()
+            self.run_idle()
+
     def start_instant_game(self, channel):
         self.game = Game()
         self.state = GameState.instant_game
         self.led.clear()
+        self.led.flash_player_colors()
         self.logger.info("New Instant Game Started")
 
     def start_live_game(self, game):
         self.state = GameState.live_game
         self.game = game
         self.led.clear()
+        self.led.flash_player_colors()
         self.logger.info("New Live Game Started between %s and %s", self.game.player1, self.game.player2)
 
     def player1scored(self, channel):
@@ -69,5 +79,6 @@ class GameController(Configurable):
             self.logger.info("Game has ended!")
 
     def run_idle(self):
+        self.state = GameState.idle
         self.led.rainbow_cycle()
 
