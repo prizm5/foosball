@@ -46,11 +46,7 @@ class LedController(object):
         self.clear()
 
     def make_led_values(self):
-        l = {}
-        for i in range(0, self.LED_COUNT-1):
-            l[i] = 0
-        self.logger.info("LEDS: %s", l)
-        return l
+        return {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 1, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0, 19: 0}
 
     def hex_to_rgb(self, value):
         value = value.lstrip('#')
