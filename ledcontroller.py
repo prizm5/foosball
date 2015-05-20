@@ -103,7 +103,7 @@ class LedController(object):
             pos -= 170
             return Color(0, pos * 3, 255 - pos * 3)
 
-      def rainbow(strip, wait_ms=20, iterations=1):
+    def rainbow(strip, wait_ms=20, iterations=1):
         """Draw rainbow that fades across all pixels at once."""
         for j in range(256*iterations):
             for i in range(strip.numPixels()):
