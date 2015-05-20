@@ -63,8 +63,7 @@ class GameController(Configurable):
             self.led.set_player_score(1, self.game.player1Score)
             self.logger.info("Player %s scored!", self.game.player1)
             self.has_game_ended()
-            time.sleep(5)
-            self.run_idle()
+
 
     def player2scored(self, channel):
         if self.state != GameState.idle:
@@ -74,8 +73,6 @@ class GameController(Configurable):
             self.led.set_player_score(2, self.game.player2Score)
             self.logger.info("Player %s scored!", self.game.player2)
             self.has_game_ended()
-            time.sleep(5)
-            self.run_idle()
 
     def has_game_ended(self):
         if self.game.player1Score == 10 or self.game.player2Score == 10:
@@ -87,5 +84,6 @@ class GameController(Configurable):
 
     def run_idle(self):
         self.state = GameState.idle
+        self.led.idle == true;
         self.led.rainbow_cycle()
 
