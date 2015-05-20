@@ -37,6 +37,7 @@ class GameController(Configurable):
 
     def handle_red_button(self, channel):
         self.led.clear()
+        self.led.flash_player_colors()
         self.run_idle()
 
     def start_instant_game(self, channel):

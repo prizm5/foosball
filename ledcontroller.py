@@ -30,7 +30,7 @@ class LedController(object):
     def flash_player_colors(self):
         p1 = 0
         p2 = 1
-        for a in range(0, 4):
+        for a in range(0, 2):
             if a % 2 == 0:
                 p1 = 0
                 p2 = 1
@@ -42,7 +42,7 @@ class LedController(object):
                 self.LEDS[i] = p1
                 self.LEDS[self.LED_OFFSET + i] = p2
             self._update_leds()
-            time.sleep(.5)
+            time.sleep(.75)
         self.clear()
 
     def make_led_values(self):
