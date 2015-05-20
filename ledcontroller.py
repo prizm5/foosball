@@ -42,7 +42,7 @@ class LedController(object):
             for i in (self.LED_OFFSET, self.LED_COUNT-1):
                 self.LEDS[i] = p2
             self._update_leds()
-            time.sleep(.25)
+            time.sleep(.5)
         self.clear()
 
     def make_led_values(self):
@@ -79,7 +79,7 @@ class LedController(object):
         for i in range(0, self.LED_COUNT-1):
             color = Color(0, 0, 0)
             if self.LEDS[i] == 1:
-                if i <= self.LED_OFFSET:
+                if i < self.LED_OFFSET:
                     color = self.player1color
                 else:
                     color = self.player2color
