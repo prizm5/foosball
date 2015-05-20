@@ -35,7 +35,7 @@ class GameController(Configurable):
         self.run_idle()
         logger.info("%s Initialized", __name__)
 
-    def handle_red_button(self):
+    def handle_red_button(self, channel):
         if self.state == GameState.instant_game or self.state == GameState.live_game:
             self.led.clear()
             self.run_idle()
