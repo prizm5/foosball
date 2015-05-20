@@ -24,7 +24,7 @@ class GameController(Configurable):
         sensors.AddSensor(sensor_config['sensor2port'], self.player2scored, sensor_config['sensor2bounce'])
 
         sensors.AddButton(sensor_config['greenbuttonport'], self.start_instant_game, sensor_config['greenbuttonbounce'])
-        sensors.AddButton(sensor_config['redbuttonport'], self.start_instant_game, sensor_config['redbuttonbounce'])
+        sensors.AddButton(sensor_config['redbuttonport'], self.handle_red_button, sensor_config['redbuttonbounce'])
 
         self.logger = logger
         self.game = Game()
