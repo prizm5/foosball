@@ -88,9 +88,8 @@ class LedController(object):
 
     def clear(self):
         self.idle = False
-        for i in range(0, self.LED_COUNT-1):
-            self.strip.setPixelColor(i, Color(0, 0, 0))
-        self.strip.show()
+        self.LEDS = self.make_led_values()
+        self._update_leds()
 
     def wheel(self, pos):
         """Generate rainbow colors across 0-255 positions."""
