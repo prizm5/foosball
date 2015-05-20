@@ -27,6 +27,8 @@ class LedController(object):
         logger.info("%s Initialized", __name__)
 
     def flash_player_colors(self):
+        p1 = 0
+        p2 = 1
         for a in range(0, 3):
             if a % 2 == 0:
                 p1 = 0
@@ -45,9 +47,9 @@ class LedController(object):
 
     def make_led_values(self):
         l={}
-        for i in range(0, self.LED_COUNT):
+        for i in range(0, self.LED_COUNT-1):
             l[i] = 0
-        return
+        return l
 
     def hex_to_rgb(self, value):
         value = value.lstrip('#')
