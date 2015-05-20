@@ -7,7 +7,7 @@ class LedController(object):
     def __init__(self, logger):
         # LED strip configuration:
         self.logger = logger
-        self.LED_COUNT      = 19      # Number of LED pixels.
+        self.LED_COUNT      = 20      # Number of LED pixels.
         self.LED_OFFSET     = self.LED_COUNT / 2
         self.LED_PIN        = 18      # GPIO pin connected to the pixels (must support PWM!).
         self.LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)
@@ -20,7 +20,7 @@ class LedController(object):
         self.idle = True
 
         # Create NeoPixel object with appropriate configuration.
-        self.strip = Adafruit_NeoPixel(self.LED_COUNT, self.LED_PIN, self.LED_FREQ_HZ, self.LED_DMA, self.LED_INVERT,
+        self.strip = Adafruit_NeoPixel(19, self.LED_PIN, self.LED_FREQ_HZ, self.LED_DMA, self.LED_INVERT,
                                        self.LED_BRIGHTNESS)
         # Initialize the library (must be called once before other functions).
         self.strip.begin()
