@@ -47,7 +47,7 @@ class LedController(object):
 
     def make_led_values(self):
         l={}
-        for i in range(0, self.LED_COUNT):
+        for i in range(0, self.LED_COUNT-1):
             l[i] = 0
         self.logger.info("LEDS: %s", l)
         return l
@@ -78,7 +78,7 @@ class LedController(object):
 
     def _update_leds(self):
         self.logger.info("Updating LEDS: %s", self.LEDS)
-        for i in range(0, self.LED_COUNT-1):
+        for i in range(0, self.LED_COUNT):
             color = Color(0, 0, 0)
             if self.LEDS[i] == 1:
                 if i < self.LED_OFFSET:
