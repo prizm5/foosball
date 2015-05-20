@@ -40,7 +40,7 @@ class LedController(object):
             for i in (0, self.LED_OFFSET-1):
                 self.LEDS[i] = p1
                 self.LEDS[self.LED_OFFSET + i] = p2
-
+                time.sleep(.1)
             self._update_leds()
             time.sleep(.5)
         self.clear()
