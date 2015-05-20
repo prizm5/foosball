@@ -38,16 +38,16 @@ class LedController(object):
                 p2 = 0
 
             for i in (0, self.LED_OFFSET-1):
-                self.LEDS[i] = p1
+                self.LEDS[i] = 0
             for i in (self.LED_OFFSET, self.LED_COUNT-1):
-                self.LEDS[i] = p2
+                self.LEDS[i] = 1
             self._update_leds()
             time.sleep(.5)
         self.clear()
 
     def make_led_values(self):
         l={}
-        for i in range(0, self.LED_COUNT-1):
+        for i in range(0, self.LED_COUNT):
             l[i] = 0
         self.logger.info("LEDS: %s", l)
         return l
