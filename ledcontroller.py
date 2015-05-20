@@ -76,8 +76,8 @@ class LedController(object):
 
     def _update_leds(self):
         self.logger.info("Updating LEDS: %s", self.LEDS)
-        for i in range(0, self.LED_COUNT-1):
-            color = Color(0, 0, 255)
+        for i in range(0, self.LED_COUNT):
+            color = Color(125, 0, 0)
             if self.LEDS[i] == 1:
                 if i < self.LED_OFFSET:
                     color = self.player1color
