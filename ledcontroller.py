@@ -49,6 +49,7 @@ class LedController(object):
         l={}
         for i in range(0, self.LED_COUNT-1):
             l[i] = 0
+        self.logger.info("LEDS: %s", l)
         return l
 
     def hex_to_rgb(self, value):
@@ -76,6 +77,7 @@ class LedController(object):
         self._update_leds()
 
     def _update_leds(self):
+        self.logger.info("Updating LEDS: %s", self.LEDS)
         for i in range(0, self.LED_COUNT-1):
             color = Color(0, 0, 0)
             if self.LEDS[i] == 1:
