@@ -133,6 +133,8 @@ class LedController(object):
             if not self.idle:
                 break
             for i in range(self.strip.numPixels()):
+                if not self.idle:
+                    break
                 self.strip.setPixelColor(i, self.wheel((i+j) & 255))
             self.strip.show()
             time.sleep(wait_ms/1000.0)
