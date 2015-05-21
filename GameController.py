@@ -53,8 +53,8 @@ class GameController(Configurable):
         self.led.clear()
         self.led.flash_player_colors()
 
-
     def start_live_game(self, game):
+        self.logger.info("New Live Game Started")
         self.state = GameState.live_game
         self.game = game
         self.led.idle = False
@@ -64,32 +64,32 @@ class GameController(Configurable):
 
     def player1scored(self, channel):
         if self.state != GameState.idle:
+            self.logger.info("Player %s scored!", self.game.player1)
             if self.state == GameState.live_game:
                 self.messages.send_goal_scored(self.game.id, self.game.player1)
             self.game.player1Score += 1
             self.led.set_player_score(1, self.game.player1Score)
-            self.logger.info("Player %s scored!", self.game.player1)
             self.has_game_ended()
 
     def player2scored(self, channel):
         if self.state != GameState.idle:
+            self.logger.info("Player %s scored!", self.game.player2)
             if self.state == GameState.live_game:
                 self.messages.send_goal_scored(self.game.id, self.game.player2)
             self.game.player2Score += 1
             self.led.set_player_score(2, self.game.player2Score)
-            self.logger.info("Player %s scored!", self.game.player2)
             time.sleep(.25)
             self.has_game_ended()
 
     def has_game_ended(self):
         if self.game.player1Score == 10 or self.game.player2Score == 10:
+            self.logger.info("Game has ended!")
             if self.state == GameState.live_game:
                 self.messages.send_end_game(self.game)
             self.state = GameState.idle
             self.led.flash_player_colors()
             self.led.clear()
             self.run_idle()
-            self.logger.info("Game has ended!")
 
     def run_idle(self):
         self.state = GameState.idle
@@ -104,7 +104,7 @@ class GameController(Configurable):
              self.led.theaterChase(Color(127,   0,   0))  # Red theater chase
              self.led.theaterChase(Color(  0,   0, 127))  # Blue theater chase
             # Rainbow animations.
-             self.led.rainbow()
-             self.led.rainbowCycle()
-             self.led.theaterChaseRainbow()
+             #self.led.rainbow()
+             #self.led.rainbowCycle()
+             #elf.led.theaterChaseRainbow()
 
