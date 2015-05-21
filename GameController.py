@@ -46,12 +46,13 @@ class GameController(Configurable):
         self.state = GameState.idle
 
     def start_instant_game(self, channel):
+        self.logger.info("New Instant Game Started")
         self.state = GameState.instant_game
         self.game = Game()
         self.led.idle = False
         self.led.clear()
         self.led.flash_player_colors()
-        self.logger.info("New Instant Game Started")
+
 
     def start_live_game(self, game):
         self.state = GameState.live_game
