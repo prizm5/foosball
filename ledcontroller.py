@@ -25,6 +25,7 @@ class LedController(object):
                                        self.LED_BRIGHTNESS)
         # Initialize the library (must be called once before other functions).
         self.strip.begin()
+        time.sleep(.25)
         logger.info("%s Initialized", __name__)
 
     def flash_player_colors(self):

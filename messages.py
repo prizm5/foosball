@@ -19,4 +19,4 @@ class GoalScored(object):
 
 class GameQueued(object):
     def __init__(self,id):
-        self.d = id
+        self.id = id

@@ -32,6 +32,7 @@ class GameController(Configurable):
         self.messages = MessageController(logger, self.start_live_game)
 
         self.led = LedController(logger)
+        time.sleep(.25)
         self.run_idle()
         logger.info("%s Initialized", __name__)
 
