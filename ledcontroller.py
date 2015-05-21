@@ -82,6 +82,7 @@ class LedController(object):
                     color = self.player2color
             self.strip.setPixelColor(i, color)
         self.strip.show()
+        time.sleep(.25)
 
     def clear(self):
         self.idle = False
