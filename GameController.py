@@ -93,15 +93,15 @@ class GameController(Configurable):
         self.led.idle = True;
         while self.led.idle:
             # Color wipe animations.
-             #self.led.colorWipe(Color(255, 0, 0))  # Red wipe
-             #self.led.colorWipe(Color(0, 255, 0))  # Blue wipe
-             #self.led.colorWipe(Color(0, 0, 255))  # Green wipe
+             self.led.colorWipe(Color(255, 0, 0))  # Red wipe
+             self.led.colorWipe(Color(0, 255, 0))  # Blue wipe
+             self.led.colorWipe(Color(0, 0, 255))  # Green wipe
             # Theater chase animations.
-             #self.led.theaterChase(Color(127, 127, 127))  # White theater chase
-             #self.led.theaterChase(Color(127,   0,   0))  # Red theater chase
-             #self.led.theaterChase(Color(  0,   0, 127))  # Blue theater chase
+             self.led.theaterChase(Color(127, 127, 127))  # White theater chase
+             self.led.theaterChase(Color(127,   0,   0))  # Red theater chase
+             self.led.theaterChase(Color(  0,   0, 127))  # Blue theater chase
             # Rainbow animations.
-             #self.led.rainbow()
-             #self.led.rainbowCycle()
+             self.led.rainbow()
+             self.led.rainbowCycle()
              self.led.theaterChaseRainbow()
 
