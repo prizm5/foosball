@@ -91,5 +91,17 @@ class GameController(Configurable):
     def run_idle(self):
         self.state = GameState.idle
         self.led.idle = True;
-        self.led.rainbow_cycle()
+        while self.led.idle:
+            # Color wipe animations.
+             self.led.colorWipe(strip, Color(255, 0, 0))  # Red wipe
+             self.led.colorWipe(strip, Color(0, 255, 0))  # Blue wipe
+             self.led.colorWipe(strip, Color(0, 0, 255))  # Green wipe
+            # Theater chase animations.
+             self.led.theaterChase(strip, Color(127, 127, 127))  # White theater chase
+             self.led.theaterChase(strip, Color(127,   0,   0))  # Red theater chase
+             self.led.theaterChase(strip, Color(  0,   0, 127))  # Blue theater chase
+            # Rainbow animations.
+             self.led.rainbow(strip)
+             self.led.rainbowCycle(strip)
+             self.led.theaterChaseRainbow(strip)
 
