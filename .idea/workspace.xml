@@ -64,8 +64,8 @@
       <file leaf-file-name="GameController.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GameController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5264624" vertical-offset="1271" max-vertical-offset="1989">
-              <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="109" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.69220054" vertical-offset="1271" max-vertical-offset="1989">
+              <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -970,8 +970,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GameController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5264624" vertical-offset="1271" max-vertical-offset="1989">
-          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="109" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.69220054" vertical-offset="1271" max-vertical-offset="1989">
+          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
