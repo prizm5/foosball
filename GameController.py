@@ -42,6 +42,8 @@ class GameController(Configurable):
         self.led.clear()
         self.led.flash_player_colors()
         self.run_idle()
+        self.led.idle = True
+        self.state = GameState.idle
 
     def start_instant_game(self, channel):
         self.state = GameState.instant_game
