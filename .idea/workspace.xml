@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45135571-407c-4e7f-8721-9724b6d675bd" name="Default" comment="" />
+    <list default="true" id="45135571-407c-4e7f-8721-9724b6d675bd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ledcontroller.py" afterPath="$PROJECT_DIR$/ledcontroller.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rpi_ws281x/python/examples/strandtest.py" afterPath="$PROJECT_DIR$/rpi_ws281x/python/examples/strandtest.py" />
+    </list>
     <list id="7df519bf-19c4-46d5-a00c-d60ce3755483" name="Rejected commit: Default" comment="return the leds&#10;" />
     <ignored path="foosball.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ledcontroller.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ledcontroller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ledcontroller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.18484849" vertical-offset="1856" max-vertical-offset="2924">
-              <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+            <state vertical-scroll-proportion="-3.7931035" vertical-offset="120" max-vertical-offset="2958">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -41,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/rpi_ws281x/python/examples/strandtest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="1768">
-              <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="97" selection-end-column="34" />
+              <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
               <folding>
                 <element signature="e#207#218#0" expanded="true" />
               </folding>
@@ -61,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameController.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameController.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GameController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1101" max-vertical-offset="1921">
-              <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.3844011" vertical-offset="540" max-vertical-offset="1921">
+              <caret line="48" column="29" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="29" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -136,6 +139,7 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/messagecontroller.py" />
         <option value="$PROJECT_DIR$/GameController.py" />
+        <option value="$PROJECT_DIR$/rpi_ws281x/python/examples/strandtest.py" />
         <option value="$PROJECT_DIR$/ledcontroller.py" />
       </list>
     </option>
@@ -925,10 +929,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ledcontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7931035" vertical-offset="120" max-vertical-offset="2958">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rpi_ws281x/python/examples/strandtest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="1768">
-          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="97" selection-end-column="34" />
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
           <folding>
             <element signature="e#207#218#0" expanded="true" />
           </folding>
@@ -947,20 +961,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GameController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1101" max-vertical-offset="1921">
-          <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.3844011" vertical-offset="540" max-vertical-offset="1921">
+          <caret line="48" column="29" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="29" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ledcontroller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.18484849" vertical-offset="1856" max-vertical-offset="2924">
-          <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
