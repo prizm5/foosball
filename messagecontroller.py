@@ -28,21 +28,21 @@ class MessageController(Configurable):
 
     def send_game_queued(self,id):
         m = GameQueued(id)
-        self.send_message(u'game:queued', m)
+        self.send_message(u'client-game:queued', m)
 
     def send_goal_scored(self,id,player):
         m = GoalScored(id,player)
-        self.send_message(u'game:goalscored', m)
+        self.send_message(u'client-game:goalscored', m)
         self.logger.info("%s scored a goal", player)
 
     def send_end_game(self, game):
-        self.send_message(u'game:ended', game)
+        self.send_message(u'client-game:ended', game)
 
     def handle_game_start(self, data):
         msg = jsonpickle.decode(data)
-        self.logger.info("client-game:started message received")
+        self.logger.info(u'client-game:started message received')
         self.logger.debug(msg)
-        game = Game(msg['_id'], msg['player1'], msg['player2'], msg['player1Score'], msg['player2Score'])
+        game = Game(msg['id'], msg['player1'], msg['player2'], msg['player1Score'], msg['player2Score'])
         self.logger.info("client-game:started message received")
         self.game_handler(game)
 
