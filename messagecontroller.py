@@ -21,13 +21,11 @@ class MessageController(Configurable):
         self.client = pusherclient.Pusher(key, secret=secret) 
         self.client.connection.bind(u'pusher:connection_established', self.connect_handler)
         self.client.connect()
-        time.sleep(.25)
         logger.info("%s Initialized", __name__)
 
     def send_message(self, event, message):
         msg = jsonpickle.encode(message, unpicklable=False)
         self.pusher.trigger(self.channel, event, msg)
-        time.sleep(.25)
 
     def send_game_queued(self,id):
         m = GameQueued(id)
@@ -52,6 +50,5 @@ class MessageController(Configurable):
     def connect_handler(self, data):
         c = self.client.subscribe(self.channel)
         c.bind(u'client-game:started', self.handle_game_start)
-        time.sleep(.25)
 
 

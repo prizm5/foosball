@@ -55,7 +55,7 @@ def main():
     while True:
         try:
             a=1
-            time.sleep(.25)
+            time.sleep(.10)
         except KeyboardInterrupt:
             game.led.clear()
             break
