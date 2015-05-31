@@ -7,7 +7,7 @@ import sys
 from GameController import *
 from logger import *
 import daemon
-from spam import do_main_program
+
 
 def setupLogging(logfile="service.log"):
     # Deafults
@@ -63,8 +63,8 @@ def main():
 
 
 with daemon.DaemonContext():
-    do_main_program()
+    main()
 
 
 #if __name__ == "__main__":
-#    main()
+#    main(
