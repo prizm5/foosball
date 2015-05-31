@@ -62,7 +62,7 @@ def main():
             break
 
 
-with daemon.DaemonContext():
+with daemon.basic_daemonize():
     main()
 
 
