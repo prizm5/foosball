@@ -109,5 +109,5 @@ class GameController(Configurable):
             #self.led.rainbow()
             #self.led.rainbowCycle()
             #elf.led.theaterChaseRainbow()
-            time.sleep(.25)
+
 
