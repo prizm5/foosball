@@ -61,8 +61,9 @@ def main():
             game.led.clear()
             break
 
+pid = "/tmp/test.pid"
 
-with daemon.daemonize():
+with daemon.daemonize(pid):
     main()
 
 
