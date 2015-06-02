@@ -41,10 +41,6 @@ class GameController(Configurable):
         if self.state != GameState.idle:
             if self.state == GameState.live_game:
                 self.messages.send_game_queued(self.game.id)
-            self.state = GameState.idle
-            self.led.flash_player_colors()
-            self.led.clear()
-            self.led.idle = True
             self.run_idle()
 
     def start_instant_game(self, channel):
@@ -90,13 +86,13 @@ class GameController(Configurable):
             self.logger.info("Game has ended!")
             if self.state == GameState.live_game:
                 self.messages.send_end_game(self.game)
-            self.state = GameState.idle
-            self.led.flash_player_colors()
-            self.led.clear()
-            self.led.idle = True
             self.run_idle()
 
     def run_idle(self):
+        self.state = GameState.idle
+        self.led.idle = True
+        self.led.flash_player_colors()
+        self.led.clear()
         while True:
             if self.state != GameState.idle:
                 break

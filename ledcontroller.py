@@ -83,7 +83,6 @@ class LedController(object):
         self.strip.show()
 
     def clear(self):
-        self.idle = False
         self.LEDS = self.make_led_values()
         self._update_leds()
 
