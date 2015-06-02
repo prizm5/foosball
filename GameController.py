@@ -37,6 +37,7 @@ class GameController(Configurable):
         logger.info("%s Initialized", __name__)
 
     def handle_red_button(self, channel):
+        self.logger("Red button pushed")
         if self.state == GameState.live_game:
             self.messages.send_game_queued(self.game.id)
         self.led.clear()
@@ -46,6 +47,7 @@ class GameController(Configurable):
         self.state = GameState.idle
 
     def start_instant_game(self, channel):
+        self.logger("Green button pushed")
         if self.state == GameState.idle:
             self.logger.info("New Instant Game Started")
             self.state = GameState.instant_game
