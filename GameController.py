@@ -38,7 +38,7 @@ class GameController(Configurable):
 
     def handle_red_button(self, channel):
         self.logger.info("Red button pushed")
-        if self.state == GameState.idle:
+        if self.state != GameState.idle:
             if self.state == GameState.live_game:
                 self.messages.send_game_queued(self.game.id)
             self.led.clear()
