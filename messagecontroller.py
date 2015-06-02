@@ -6,7 +6,6 @@ import time
 from messages import *
 
 
-
 class MessageController(Configurable):
     def __init__(self, logger, start_game_handler):
         Configurable.__init__(self, 'pusher.ini')
