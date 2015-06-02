@@ -62,9 +62,9 @@ def main():
             break
 
 
-#with daemon.daemonize():
-#    main()
-
-
-if __name__ == "__main__":
+with daemon.daemonize():
     main()
+
+
+#if __name__ == "__main__":
+#    main()
