@@ -64,8 +64,8 @@ class LedController(object):
         self.logger.info("player: " + str(player) + " score: " + str(score))
         for i in range(0, score):
             if player % 2 == 0:
-                #self.LEDS[self.LED_COUNT - i] = 1
-                self.LEDS[self.LED_OFFSET - 1 + i] = 1
+                self.LEDS[self.LED_COUNT - i] = 1
+                #self.LEDS[self.LED_OFFSET - 1 + i] = 1
             else:
                 self.LEDS[i] = 1
 
@@ -80,7 +80,7 @@ class LedController(object):
                     color = self.player1color
                 else:
                      color = self.player2color
-            self.strip.setPixelColor(self.LED_COUNT - 1 - i, color)
+            self.strip.setPixelColor(i, color)
         self.strip.show()
 
     def clear(self):
