@@ -98,7 +98,7 @@ class GameController(Configurable):
             if self.state != GameState.idle:
                 break
             # Color wipe animations.
-            #self.led.colorWipe(Color(255, 0, 0))  # Red wipe
+            self.led.colorWipe(Color(255, 0, 0))  # Red wipe
             #self.led.colorWipe(Color(0, 255, 0))  # Blue wipe
             #self.led.colorWipe(Color(0, 0, 255))  # Green wipe
             # Theater chase animations.
