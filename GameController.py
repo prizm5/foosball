@@ -38,13 +38,14 @@ class GameController(Configurable):
 
     def handle_red_button(self, channel):
         self.logger.info("Red button pushed")
-        if self.state == GameState.live_game:
-            self.messages.send_game_queued(self.game.id)
-        self.led.clear()
-        self.led.flash_player_colors()
-        self.run_idle()
-        self.led.idle = True
-        self.state = GameState.idle
+        if self.state == GameState.idle:
+            if self.state == GameState.live_game:
+                self.messages.send_game_queued(self.game.id)
+            self.led.clear()
+            self.led.flash_player_colors()
+            self.state = GameState.idle
+            self.led.idle = True
+            self.run_idle()
 
     def start_instant_game(self, channel):
         self.logger.info("Green button pushed")
@@ -92,11 +93,11 @@ class GameController(Configurable):
             self.state = GameState.idle
             self.led.flash_player_colors()
             self.led.clear()
+            self.state = GameState.idle
+            self.led.idle = True
             self.run_idle()
 
     def run_idle(self):
-        self.state = GameState.idle
-        self.led.idle = True
         while True:
             if self.state != GameState.idle:
                 break
