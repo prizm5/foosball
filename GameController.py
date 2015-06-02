@@ -88,6 +88,7 @@ class GameController(Configurable):
             self.run_idle()
 
     def run_idle(self):
+        self.state = GameState.idle
         while True:
             if self.state == GameState.idle:
                 self.led.idle = True
@@ -105,7 +106,6 @@ class GameController(Configurable):
                 self.led.theaterChaseRainbow()
             else:
                 self.led.idle = False
-                self.state = GameState.idle
                 self.led.flash_player_colors()
                 self.led.clear()
 
