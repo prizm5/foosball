@@ -104,6 +104,7 @@ class GameController(Configurable):
             self.led.colorWipe(Color(255, 0, 0))  # Red wipe
             self.led.colorWipe(Color(0, 255, 0))  # Blue wipe
             self.led.colorWipe(Color(0, 0, 255))  # Green wipe
+            self.logger.info("idle loop %s", self.state)
             time.sleep(.025)
             # Theater chase animations.
             #self.led.theaterChase(Color(127, 127, 127))  # White theater chase
