@@ -81,7 +81,7 @@ class LedController(object):
                     color = self.player1color
                 else:
                     color = self.player2color
-            self.strip.setPixelColor(i, color)
+            self.strip.setPixelColor(l, color)
         self.strip.show()
         #for i in reversed(range(0, self.LED_COUNT-1)):
         #    color = Color(0, 0, 0)
