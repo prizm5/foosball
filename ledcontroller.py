@@ -46,8 +46,7 @@ class LedController(object):
         self.clear()
 
     def make_led_values(self):
-        return {19: 0, 18: 0, 17: 0, 16: 0, 15: 0, 14: 0, 13: 0, 12: 0, 11: 0, 10: 0, 9: 0, 8: 0, 7: 0, 6: 0, 5: 0, 4: 0, 3: 0, 2: 0, 1: 0, 0: 0}
-        #return {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0, 19: 0}
+        return {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0, 19: 0}
 
     def hex_to_rgb(self, value):
         value = value.lstrip('#')
@@ -74,14 +73,14 @@ class LedController(object):
 
     def _update_leds(self):
         self.logger.info("Updating LEDS: %s", self.LEDS)
-        for i in range(0, self.LED_COUNT):
+        for i in range(0, self.LED_COUNT-1):
             color = Color(0, 0, 0)
             if self.LEDS[i] == 1:
                 if i < self.LED_OFFSET:
                     color = self.player1color
                 else:
                      color = self.player2color
-            self.strip.setPixelColor(i, color)
+            self.strip.setPixelColor(self.LED_COUNT - 1 - i, color)
         self.strip.show()
 
     def clear(self):
