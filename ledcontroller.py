@@ -76,7 +76,7 @@ class LedController(object):
 
         for l in self.LEDS:
             color = Color(0, 0, 0)
-            if l == 1:
+            if self.LEDS[l] == 1:
                 if l < self.LED_OFFSET:
                     color = self.player1color
                 else:
