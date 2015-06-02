@@ -110,5 +110,4 @@ class GameController(Configurable):
                 self.led.theaterChaseRainbow()
             else:
                 self.led.idle = False
-                self.led.clear()
 
