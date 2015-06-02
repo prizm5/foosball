@@ -42,12 +42,11 @@
       <file leaf-file-name="GameController.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GameController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8476052" vertical-offset="793" max-vertical-offset="1530">
-              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.47314948" vertical-offset="269" max-vertical-offset="1666">
+              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
                 <element signature="e#269#1203#0" expanded="false" />
-                <element signature="e#1255#1484#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -474,7 +473,6 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <element signature="e#269#1203#0" expanded="false" />
-            <element signature="e#1255#1484#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -563,7 +561,6 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <element signature="e#269#1203#0" expanded="false" />
-            <element signature="e#1255#1484#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -648,7 +645,6 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <element signature="e#269#1203#0" expanded="false" />
-            <element signature="e#1255#1484#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,7 +729,6 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <element signature="e#269#1203#0" expanded="false" />
-            <element signature="e#1255#1484#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -919,12 +914,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GameController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8476052" vertical-offset="793" max-vertical-offset="1530">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.47314948" vertical-offset="269" max-vertical-offset="1666">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <element signature="e#269#1203#0" expanded="false" />
-            <element signature="e#1255#1484#0" expanded="false" />
           </folding>
         </state>
       </provider>

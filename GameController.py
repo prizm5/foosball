@@ -53,13 +53,17 @@ class GameController(Configurable):
             self.led.flash_player_colors()
 
     def start_live_game(self, game):
-        self.logger.info("New Live Game Started")
-        self.state = GameState.live_game
-        self.game = game
-        self.led.idle = False
-        self.led.clear()
-        self.led.flash_player_colors()
-        self.logger.info("New Live Game Started between %s and %s", self.game.player1, self.game.player2)
+        self.logger.info("Green button pushed")
+        if self.state == GameState.idle:
+            self.logger.info("New Live Game Started")
+            self.state = GameState.live_game
+            self.game = game
+            self.led.idle = False
+            self.led.clear()
+            self.led.flash_player_colors()
+            self.logger.info("New Live Game Started between %s and %s", self.game.player1, self.game.player2)
+            self.led.flash_player_colors()
+
 
     def player1scored(self, channel):
         if self.state != GameState.idle:
@@ -106,6 +110,5 @@ class GameController(Configurable):
                 self.led.theaterChaseRainbow()
             else:
                 self.led.idle = False
-                self.led.flash_player_colors()
                 self.led.clear()
 
