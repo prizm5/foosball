@@ -13,6 +13,7 @@ class GameState(Enum):
 class GameController(Configurable):
     def __init__(self, logger):
         Configurable.__init__(self, 'game.ini')
+        self.logger = logger
         self.state = GameState.idle
         self.player1score = 0
         self.player2score = 0
@@ -26,7 +27,6 @@ class GameController(Configurable):
         sensors.AddButton(sensor_config['greenbuttonport'], self.start_instant_game, sensor_config['greenbuttonbounce'])
         sensors.AddButton(sensor_config['redbuttonport'], self.handle_red_button, sensor_config['redbuttonbounce'])
 
-        self.logger = logger
         self.game = Game()
 
         self.messages = MessageController(logger, self.start_live_game)
