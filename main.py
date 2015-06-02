@@ -6,7 +6,8 @@ import argparse
 import sys
 from GameController import *
 from logger import *
-import daemon
+from daemonize import Daemonize
+
 
 
 def setupLogging(logfile="service.log"):
@@ -63,9 +64,8 @@ def main():
 
 pid = "/tmp/test.pid"
 
-with daemon.daemonize(pid):
-    main()
-
+daemon = Daemonize(app="FoosballService", pid=pid, action=main)
+daemon.start()
 
 #if __name__ == "__main__":
 #    main()
