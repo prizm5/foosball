@@ -25,7 +25,6 @@ class LedController(object):
                                        self.LED_BRIGHTNESS)
         # Initialize the library (must be called once before other functions).
         self.strip.begin()
-        time.sleep(.25)
         logger.info("%s Initialized", __name__)
 
     def flash_player_colors(self):
@@ -43,7 +42,7 @@ class LedController(object):
                 self.LEDS[i] = p1
                 self.LEDS[self.LED_OFFSET + i] = p2
             self._update_leds()
-            time.sleep(.75)
+            time.sleep(.25)
         self.clear()
 
     def make_led_values(self):
@@ -83,7 +82,6 @@ class LedController(object):
                     color = self.player2color
             self.strip.setPixelColor(i, color)
         self.strip.show()
-        time.sleep(.25)
 
     def clear(self):
         self.idle = False

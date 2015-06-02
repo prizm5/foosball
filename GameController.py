@@ -95,7 +95,7 @@ class GameController(Configurable):
         self.state = GameState.idle
         self.led.idle = True
         while True:
-            if self.state == GameState.idle:
+            if self.state != GameState.idle:
                 break
             # Color wipe animations.
             self.led.colorWipe(Color(255, 0, 0))  # Red wipe

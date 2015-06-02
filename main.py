@@ -6,7 +6,7 @@ import argparse
 import sys
 from GameController import *
 from logger import *
-from daemonize import Daemonize
+#from daemonize import Daemonize
 
 
 
@@ -62,10 +62,10 @@ def main():
             game.led.clear()
             break
 
-pid = "/tmp/test.pid"
+#pid = "/tmp/test.pid"
 
-daemon = Daemonize(app="FoosballService", pid=pid, action=main)
-daemon.start()
+#daemon = Daemonize(app="FoosballService", pid=pid, action=main)
+#daemon.start()
 
-#if __name__ == "__main__":
-#    main()
+if __name__ == "__main__":
+    main()
