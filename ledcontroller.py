@@ -73,15 +73,25 @@ class LedController(object):
 
     def _update_leds(self):
         self.logger.info("Updating LEDS: %s", self.LEDS)
-        for i in reversed(range(0, self.LED_COUNT-1)):
+
+        for l in self.LEDS:
             color = Color(0, 0, 0)
-            if self.LEDS[i] == 1:
-                if i < self.LED_OFFSET:
+            if l == 1:
+                if l < self.LED_OFFSET:
                     color = self.player1color
                 else:
                     color = self.player2color
             self.strip.setPixelColor(i, color)
         self.strip.show()
+        #for i in reversed(range(0, self.LED_COUNT-1)):
+        #    color = Color(0, 0, 0)
+        #    if self.LEDS[i] == 1:
+        #        if i < self.LED_OFFSET:
+        #            color = self.player1color
+        #        else:
+        #            color = self.player2color
+        #    self.strip.setPixelColor(i, color)
+        #self.strip.show()
 
     def clear(self):
         self.idle = False
