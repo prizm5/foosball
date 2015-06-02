@@ -40,7 +40,7 @@ class GameController(Configurable):
         if self.state != GameState.idle:
             if self.state == GameState.live_game:
                 self.messages.send_game_queued(self.game.id)
-
+            self.state = GameState.idle
 
     def start_instant_game(self, channel):
         self.logger.info("Green button pushed")
@@ -89,17 +89,16 @@ class GameController(Configurable):
 
     def run_idle(self):
         self.state = GameState.idle
-        self.led.idle = True
+
         self.led.flash_player_colors()
         self.led.clear()
         while True:
             if self.state == GameState.idle:
-
+                self.led.idle = True
                 # Color wipe animations.
                 self.led.colorWipe(Color(255, 0, 0))  # Red wipe
                 self.led.colorWipe(Color(0, 255, 0))  # Blue wipe
                 self.led.colorWipe(Color(0, 0, 255))  # Green wipe
-                time.sleep(.25)
                 # Theater chase animations.
                 #self.led.theaterChase(Color(127, 127, 127))  # White theater chase
                 #self.led.theaterChase(Color(127,   0,   0))  # Red theater chase
@@ -108,5 +107,6 @@ class GameController(Configurable):
                 #self.led.rainbow()
                 #self.led.rainbowCycle()
                 #self.led.theaterChaseRainbow()
-
+            else:
+                self.led.idle = False
 
