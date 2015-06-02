@@ -32,7 +32,6 @@ class GameController(Configurable):
         self.messages = MessageController(logger, self.start_live_game)
 
         self.led = LedController(logger)
-        time.sleep(.25)
         self.run_idle()
         logger.info("%s Initialized", __name__)
 
@@ -100,7 +99,6 @@ class GameController(Configurable):
             self.led.colorWipe(Color(255, 0, 0))  # Red wipe
             self.led.colorWipe(Color(0, 255, 0))  # Blue wipe
             self.led.colorWipe(Color(0, 0, 255))  # Green wipe
-            self.logger.info("idle loop %s", self.state)
             time.sleep(.25)
             # Theater chase animations.
             #self.led.theaterChase(Color(127, 127, 127))  # White theater chase
