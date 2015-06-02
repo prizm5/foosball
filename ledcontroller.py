@@ -80,7 +80,6 @@ class LedController(object):
                     color = self.player1color
                 else:
                     self.logger.info("Setting %s pixel to player 2 color", i)
-            else:
             self.strip.setPixelColor(i, color)
         self.strip.show()
 
