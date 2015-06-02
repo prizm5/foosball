@@ -62,7 +62,6 @@ class GameController(Configurable):
             self.led.clear()
             self.led.flash_player_colors()
             self.logger.info("New Live Game Started between %s and %s", self.game.player1, self.game.player2)
-            self.led.flash_player_colors()
 
 
     def player1scored(self, channel):
@@ -89,7 +88,7 @@ class GameController(Configurable):
             self.logger.info("Game has ended!")
             if self.state == GameState.live_game:
                 self.messages.send_end_game(self.game)
-            self.run_idle()
+            self.state = GameState.idle
 
     def run_idle(self):
         self.state = GameState.idle
