@@ -78,9 +78,11 @@ class LedController(object):
             if self.LEDS[i] == 1:
                 if i < self.LED_OFFSET:
                     color = self.player1color
+                    self.logger.info("Setting %s pixel to player 1 color", i)
                 else:
+                    self.logger.info("Setting %s pixel to player 2 color", i)
                     color = self.player2color
-            self.logger.info("Setting %s pixel to $s", i, color)
+                self.logger.info("Setting %s pixel to player 0 color", i)
             self.strip.setPixelColor(i, color)
         self.strip.show()
 
