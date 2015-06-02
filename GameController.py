@@ -41,9 +41,9 @@ class GameController(Configurable):
         if self.state != GameState.idle:
             if self.state == GameState.live_game:
                 self.messages.send_game_queued(self.game.id)
-            self.led.clear()
-            self.led.flash_player_colors()
             self.state = GameState.idle
+            self.led.flash_player_colors()
+            self.led.clear()
             self.led.idle = True
             self.run_idle()
 
@@ -93,7 +93,6 @@ class GameController(Configurable):
             self.state = GameState.idle
             self.led.flash_player_colors()
             self.led.clear()
-            self.state = GameState.idle
             self.led.idle = True
             self.run_idle()
 
