@@ -62,6 +62,16 @@ class LedController(object):
 
     def set_player_score(self, player, score):
         self.logger.info("player: " + str(player) + " score: " + str(score))
+        for i in range(0, 10):
+            if i < score:
+                v = 1
+            else:
+                v = 0
+            if player % 2 == 0:
+                self.LEDS[i] = v
+            else:
+                self.LEDS[self.LED_COUNT - 1 - i] = v
+
         for i in range(0, score):
             if player % 2 == 0:
                 self.LEDS[i] = 1

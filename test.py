@@ -1,25 +1,18 @@
 
 class Test():
-    def __init__(self):
-        # LED strip configuration:
-        self.score = 0
-
-    def update(self, score):
-        original = score
-        score += 1
-        print "original " + str(original)
-        print "score " + str(score)
-        return score
-
-    def doUpdate(self):
-        self.score = self.update(self.score)
-        self.score = self.update(self.score)
-        print "final score " + str(t.score)
 
 
+    @staticmethod
+    def test_range(score):
+        for i in range(0, 10):
+            if i < score:
+                v = 1
+            else:
+                v = 0
+            print "i: " + str(i) + " val: " + str(v)
 
 
 t = Test()
-t.doUpdate()
+t.test_range(2)
 
 
