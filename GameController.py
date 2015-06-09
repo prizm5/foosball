@@ -4,6 +4,9 @@ from sensor import *
 from ledcontroller import *
 import time
 
+from datetime import datetime
+from datetime import timedelta
+
 class GameState(Enum):
     idle = 1
     instant_game = 2
@@ -14,9 +17,10 @@ class GameController(Configurable):
     def __init__(self, logger):
         Configurable.__init__(self, '/home/pi/development/foosball/game.ini')
         self.logger = logger
-        self.state = GameState.idle
+        self.__state = GameState.idle
         self.player1score = 0
         self.player2score = 0
+        self.last_action_time = datetime.now()
 
         sensor_config = self.ConfigSectionMap('sensor')
         sensors = SensorController(logger)
@@ -35,18 +39,24 @@ class GameController(Configurable):
         self.run_idle()
         logger.info("%s Initialized", __name__)
 
+    def checkState(self):
+        now = datetime.now()
+        delta = timedelta(minutes=3)
+        if self.last_action_time + delta < now:
+            self.has_game_ended(True)
+
     def handle_red_button(self, channel):
         self.logger.info("Red button pushed")
-        if self.state != GameState.idle:
-            if self.state == GameState.live_game:
+        if self.__state != GameState.idle:
+            if self.__state == GameState.live_game:
                 self.messages.send_game_queued(self.game.id)
-            self.state = GameState.idle
+            self.__state = GameState.idle
 
     def start_instant_game(self, channel):
         self.logger.info("Green button pushed")
-        if self.state == GameState.idle:
+        if self.__state == GameState.idle:
             self.logger.info("New Instant Game Started")
-            self.state = GameState.instant_game
+            self.__state = GameState.instant_game
             self.game = Game()
             self.led.idle = False
             self.led.clear()
@@ -54,9 +64,9 @@ class GameController(Configurable):
 
     def start_live_game(self, game):
         self.logger.info("Green button pushed")
-        if self.state == GameState.idle:
+        if self.__state == GameState.idle:
             self.logger.info("New Live Game Started")
-            self.state = GameState.live_game
+            self.__state = GameState.live_game
             self.game = game
             self.led.idle = False
             self.led.clear()
@@ -64,10 +74,10 @@ class GameController(Configurable):
             self.logger.info("New Live Game Started between %s and %s", self.game.player1, self.game.player2)
 
     def scored(self,player, playerid, score):
-        if self.state != GameState.idle:
+        if self.__state != GameState.idle:
             original = score
             self.logger.info("Player %s scored!", player)
-            if self.state == GameState.live_game:
+            if self.__state == GameState.live_game:
                 self.messages.send_goal_scored(self.game.id, player)
             score += 1
             for i in range(0, 6):
@@ -78,6 +88,7 @@ class GameController(Configurable):
                 time.sleep(.15)
             self.led.set_player_score(playerid, score)
             self.has_game_ended()
+            self.last_action_time = datetime.datetime.now()
             return score
 
     def player1scored(self, channel):
@@ -86,17 +97,17 @@ class GameController(Configurable):
     def player2scored(self, channel):
         self.game.player2Score = self.scored(self.game.player2, 2, self.game.player2Score)
 
-    def has_game_ended(self):
-        if self.game.player1Score == 10 or self.game.player2Score == 10:
+    def has_game_ended(self, end = False):
+        if self.game.player1Score == 10 or self.game.player2Score == 10 or end:
             self.logger.info("Game has ended!")
-            if self.state == GameState.live_game:
+            if self.__state == GameState.live_game:
                 self.messages.send_end_game(self.game)
-            self.state = GameState.idle
+            self.__state = GameState.idle
 
     def run_idle(self):
-        self.state = GameState.idle
+        self.__state = GameState.idle
         while True:
-            if self.state == GameState.idle:
+            if self.__state == GameState.idle:
                 self.led.idle = True
                 # Color wipe animations.
                 self.led.colorWipe(Color(255, 0, 0))  # Red wipe

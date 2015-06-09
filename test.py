@@ -1,18 +1,15 @@
-
-class Test():
-
-
-    @staticmethod
-    def test_range(score):
-        for i in range(0, 10):
-            if i < score:
-                v = 1
-            else:
-                v = 0
-            print "i: " + str(i) + " val: " + str(v)
+from datetime import datetime
+from datetime import timedelta
+import time
 
 
-t = Test()
-t.test_range(2)
+then = datetime.now()
 
-
+for i in range(0, 10):
+    now = datetime.now()
+    delta = timedelta(seconds = 1)
+    if then + delta < now:
+        print "timeout"
+    else:
+        print "waiting"
+    time.sleep(.5)

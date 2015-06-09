@@ -6,8 +6,6 @@ import argparse
 import sys
 from GameController import *
 from logger import *
-#from daemonize import Daemonize
-
 
 
 def setupLogging(logfile="service.log"):
@@ -52,11 +50,10 @@ def main():
 
     game = GameController(logger)
 
-
     # Loop forever, doing something useful hopefully:
     while True:
         try:
-            a=1
+            game.checkState()
             time.sleep(.025)
         except KeyboardInterrupt:
             game.led.clear()
