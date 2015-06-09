@@ -1,10 +1,8 @@
 import RPi.GPIO as GPIO
-
+import time
 
 class SensorController(object):
     def __init__(self, logger):
-        self.sensor1 = 17
-        self.sensor2 = 22
         GPIO.setmode(GPIO.BCM)
         self.logger = logger
         logger.info("%s Initialized", __name__)

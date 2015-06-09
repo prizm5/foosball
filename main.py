@@ -6,6 +6,8 @@ import argparse
 import sys
 from GameController import *
 from logger import *
+#from daemonize import Daemonize
+
 
 
 def setupLogging(logfile="service.log"):
@@ -55,10 +57,15 @@ def main():
     while True:
         try:
             a=1
-            time.sleep(1)
+            time.sleep(.025)
         except KeyboardInterrupt:
+            game.led.clear()
             break
 
+#pid = "/tmp/test.pid"
+
+#daemon = Daemonize(app="FoosballService", pid=pid, action=main)
+#daemon.start()
 
 if __name__ == "__main__":
     main()
