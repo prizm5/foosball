@@ -14,3 +14,7 @@ class SoundController(object):
 
     def play_end(self):
         os.system("mpg123 -q %s &", os.path.join(self.path, "piano.wav"))
+
+test = SoundController(os.path.combine(os.path.dirname("."), "wavs"))
+
+test.play_start()
