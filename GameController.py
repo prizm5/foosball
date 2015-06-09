@@ -75,7 +75,8 @@ class GameController(Configurable):
                     self.led.set_player_score(playerid, score)
                 else:
                     self.led.set_player_score(playerid, original)
-                time.sleep(.25)
+                time.sleep(.15)
+            self.led.set_player_score(playerid, score)
             self.has_game_ended()
             return score
 
