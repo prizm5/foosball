@@ -12,7 +12,7 @@ class GameState(Enum):
 
 class GameController(Configurable):
     def __init__(self, logger):
-        Configurable.__init__(self, 'game.ini')
+        Configurable.__init__(self, '/home/pi/development/foosball/game.ini')
         self.logger = logger
         self.state = GameState.idle
         self.player1score = 0
