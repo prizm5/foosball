@@ -88,7 +88,7 @@ class GameController(Configurable):
                 time.sleep(.15)
             self.led.set_player_score(playerid, score)
             self.has_game_ended()
-            self.last_action_time = datetime.datetime.now()
+            self.last_action_time = datetime.now()
             return score
 
     def player1scored(self, channel):
