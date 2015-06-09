@@ -87,15 +87,16 @@ class GameController(Configurable):
                     self.led.set_player_score(playerid, original)
                 time.sleep(.15)
             self.led.set_player_score(playerid, score)
-            self.has_game_ended()
             self.last_action_time = datetime.now()
             return score
 
     def player1scored(self, channel):
         self.game.player1Score = self.scored(self.game.player1, 1, self.game.player1Score)
+        self.has_game_ended()
 
     def player2scored(self, channel):
         self.game.player2Score = self.scored(self.game.player2, 2, self.game.player2Score)
+        self.has_game_ended()
 
     def has_game_ended(self, end = False):
         if self.game.player1Score == 10 or self.game.player2Score == 10 or end:
