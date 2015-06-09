@@ -72,12 +72,6 @@ class LedController(object):
             else:
                 self.LEDS[self.LED_COUNT - 1 - i] = v
 
-        for i in range(0, score):
-            if player % 2 == 0:
-                self.LEDS[i] = 1
-            else:
-                self.LEDS[self.LED_COUNT - 1 - i] = 1
-
         self._update_leds()
 
     def _update_leds(self):

@@ -70,11 +70,11 @@ class GameController(Configurable):
             if self.state == GameState.live_game:
                 self.messages.send_goal_scored(self.game.id, player)
             score += 1
-            for i in range(0,3):
+            for i in range(0, 6):
                 if i % 2 == 0:
-                    self.led.set_player_score(playerid, original)
-                else:
                     self.led.set_player_score(playerid, score)
+                else:
+                    self.led.set_player_score(playerid, original)
                 time.sleep(.25)
             self.has_game_ended()
             return score
