@@ -6,8 +6,6 @@ import time
 
 from datetime import datetime
 from datetime import timedelta
-from soundcontroller import SoundController
-
 
 class GameState(Enum):
     idle = 1
@@ -37,7 +35,7 @@ class GameController(Configurable):
 
         self.messages = MessageController(logger, self.start_live_game)
 
-        self.SoundController = SoundController(logger)
+        self.SoundController = SoundController()
 
         self.led = LedController(logger)
         self.run_idle()
@@ -55,7 +53,6 @@ class GameController(Configurable):
             if self.__state == GameState.live_game:
                 self.messages.send_game_queued(self.game.id)
             self.__state = GameState.idle
-            self.SoundController.play_end()
 
     def start_instant_game(self, channel):
         self.logger.info("Green button pushed")
@@ -66,7 +63,6 @@ class GameController(Configurable):
             self.led.idle = False
             self.led.clear()
             self.led.flash_player_colors()
-            self.SoundController.play_start()
 
     def start_live_game(self, game):
         self.logger.info("Green button pushed")
@@ -77,7 +73,6 @@ class GameController(Configurable):
             self.led.idle = False
             self.led.clear()
             self.led.flash_player_colors()
-            self.SoundController.play_start()
             self.logger.info("New Live Game Started between %s and %s", self.game.player1, self.game.player2)
 
     def scored(self,player, playerid, score):
@@ -95,7 +90,6 @@ class GameController(Configurable):
                 time.sleep(.15)
             self.led.set_player_score(playerid, score)
             self.last_action_time = datetime.now()
-            self.SoundController.play_scored()
             return score
 
     def player1scored(self, channel):
