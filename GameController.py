@@ -35,8 +35,6 @@ class GameController(Configurable):
 
         self.messages = MessageController(logger, self.start_live_game)
 
-        self.SoundController = SoundController()
-
         self.led = LedController(logger)
         self.run_idle()
         logger.info("%s Initialized", __name__)
