@@ -54,15 +54,12 @@ def main():
     while True:
         try:
             game.checkState()
-            time.sleep(.025)
+            time.sleep(.25)
         except KeyboardInterrupt:
             game.led.clear()
             break
 
-#pid = "/tmp/test.pid"
 
-#daemon = Daemonize(app="FoosballService", pid=pid, action=main)
-#daemon.start()
 
 if __name__ == "__main__":
     main()
