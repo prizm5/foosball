@@ -9,6 +9,7 @@ class SoundController(object):
 
     def __play_file(self, file):
         f = os.path.join(self.dir, "wavs/{0}".format(file))
+        self.logger.info("playing file %s", file)
         os.system("aplay {0}".format(f))
 
     def play_scored(self):
